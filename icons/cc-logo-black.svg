@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Layer_1">
+    </g>
+    <g id="Layer_2">
+    </g>
+    <g id="cc-logo-black" transform="matrix(1.42105,0,0,1.42986,497.368,42.8957)">
+        <rect x="-350" y="-30" width="190" height="188.83" style="fill:none;"/>
+        <g transform="matrix(0.703704,0,0,0.69937,-466.382,-171.262)">
+            <circle cx="300.2" cy="308.8" r="13.27"/>
+            <circle cx="329.39" cy="337.84" r="13.27"/>
+            <circle cx="300.82" cy="366.63" r="13.27"/>
+            <circle cx="269.29" cy="337.22" r="13.27"/>
+            <circle cx="324.17" cy="279.86" r="13.27"/>
+            <circle cx="278.04" cy="279.5" r="13.27"/>
+            <circle cx="358.49" cy="361.36" r="10.68"/>
+            <circle cx="393.21" cy="337.48" r="10.68"/>
+            <circle cx="356.21" cy="313.7" r="10.68"/>
+            <circle cx="380.54" cy="382.05" r="10.68"/>
+            <circle cx="347.69" cy="417.35" r="10.68"/>
+            <circle cx="324.4" cy="393.2" r="10.68"/>
+            <circle cx="300.22" cy="429.33" r="10.68"/>
+            <circle cx="380.11" cy="290.99" r="10.68"/>
+            <circle cx="347.47" cy="255.51" r="10.68"/>
+            <circle cx="298.71" cy="243.59" r="10.68"/>
+            <circle cx="252.5" cy="256.49" r="10.68"/>
+            <circle cx="243" cy="313.03" r="10.68"/>
+            <circle cx="220.37" cy="291.33" r="10.68"/>
+            <circle cx="276.75" cy="392.85" r="10.68"/>
+            <circle cx="243.58" cy="360.4" r="10.68"/>
+            <circle cx="253.58" cy="415.24" r="10.68"/>
+            <circle cx="220.28" cy="383.36" r="10.68"/>
+            <circle cx="208.48" cy="337.46" r="10.68"/>
+            <circle cx="369.24" cy="231.68" r="7.19"/>
+            <circle cx="404.06" cy="268.29" r="7.19"/>
+            <circle cx="423.63" cy="311.9" r="7.19"/>
+            <circle cx="421.86" cy="361.44" r="7.19"/>
+            <circle cx="404.23" cy="407.71" r="7.19"/>
+            <circle cx="371" cy="441.69" r="7.19"/>
+            <circle cx="323.43" cy="458.29" r="7.19"/>
+            <circle cx="276.53" cy="458.98" r="7.19"/>
+            <circle cx="231.83" cy="441.85" r="7.19"/>
+            <circle cx="192.94" cy="404.53" r="7.19"/>
+            <circle cx="177.26" cy="360.72" r="7.19"/>
+            <circle cx="177.14" cy="312.69" r="7.19"/>
+            <circle cx="196.05" cy="268.47" r="7.19"/>
+            <circle cx="232.72" cy="233.21" r="7.19"/>
+            <circle cx="275.58" cy="214.99" r="7.19"/>
+            <circle cx="323.66" cy="215.31" r="7.19"/>
+            <path d="M353.74,258.45L380.38,287.9L403.61,266.67L406.6,271.31L380.05,295.53L349.73,261.5L353.74,258.45Z" style="fill-rule:nonzero;"/>
+            <path d="M248.16,258.62L221.51,288.08L198.29,266.84L195.3,271.49L221.84,295.71L252.16,261.67L248.16,258.62Z" style="fill-rule:nonzero;"/>
+            <path d="M392,341.76L363.24,361.89L359.26,356.8L388.02,336.23L392,341.76Z" style="fill-rule:nonzero;"/>
+            <path d="M387.79,386.22L405.27,405.24L402.17,407.68L384.03,388.87L387.79,386.22Z" style="fill-rule:nonzero;"/>
+            <path d="M353.95,419.18L372.09,439.97L369.21,442.4L350.19,421.83L353.95,419.18Z" style="fill-rule:nonzero;"/>
+            <path d="M347.09,423.16L327.19,458.77L322.76,456.34L342.67,420.5L347.09,423.16Z" style="fill-rule:nonzero;"/>
+            <path d="M259.72,419.62L278.3,457L274.1,458.55L255.08,421.61L259.72,419.62Z" style="fill-rule:nonzero;"/>
+            <path d="M251.98,421.39L235.83,441.52L232.07,438.42L248,418.74L251.98,421.39Z" style="fill-rule:nonzero;"/>
+            <path d="M219.02,387.77L195.79,406.35L192.92,402.14L215.7,384.01L219.02,387.77Z" style="fill-rule:nonzero;"/>
+            <path d="M241.58,356.58L213.93,337.11L210.39,341.76L238.71,360.78L241.58,356.58Z" style="fill-rule:nonzero;"/>
+            <path d="M271.89,344.41L300.64,371.18L332.05,341.09L326.96,335.79L300.64,361.89L277.42,340.21L271.89,344.41Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

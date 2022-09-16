@@ -1,0 +1,892 @@
+/* Edited by Joseph Tajaran. I made this for my UX portfolio gotajaran.com Nice to meet you :) */
+
+/* OVERALL --------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow: visible;
+}
+
+/* Content Wrapper */
+.joseph {
+	width: 100%;
+}
+
+/* Horizontal line */
+hr {
+  border: 1px solid rgba(0,0,0,0.1);
+	margin: 64px 0;
+}
+
+
+/* TYPOGRAPHY --------------------------------------------------*/
+/* Metropolis Font ---*/
+@font-face {
+	font-family: Metropolis;
+	src: url(Metropolis-Bold.otf);
+	font-weight: 700;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+	font-family: Metropolis, arial, sans-serif;
+	line-height: 1.3;
+}
+
+
+/* Inter Font ---*/
+@font-face {
+	font-family: Inter;
+	src: url(Inter-Regular.otf);
+	font-weight: 400;
+}
+
+p, 
+figcaption,
+a {
+	font-family: Inter, arial, sans-serif;
+	line-height: 1.5;
+}
+
+/* Font Colors ---*/
+h1, 
+h2, 
+h3, 
+h5, 
+i, 
+nav a,
+p,
+.backwards {
+	color: #111111;
+}
+
+p > a,
+figcaption {
+	color: rgb(0, 0, 0, 0.6);
+}
+
+h4 {
+	color: #0290EE;
+}
+
+/* Font Sizes ---*/
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 20px;
+}
+
+h4, 
+nav a,
+figcaption,
+footer p,
+footer a,
+.backwards {
+	font-size: 16px;
+}
+
+h5, 
+i {
+	font-size: 14px;
+}
+
+/* Backwards text so my email and phone number don't get pick up from bots */
+.backwards {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-family: Inter;
+	line-height: 2;
+}
+
+/* HYPERLINK --------------------------------------------------*/
+a {
+	text-decoration: none;
+}
+
+a:hover,
+a:hover i,
+p > a,
+.footer-menu a:hover {
+	color: #0290EE;
+}
+
+.footer-menu a {
+	color: #111111;
+}
+
+.curve-container a {
+	color: #FFFFFF;
+}
+
+p > a:hover {
+	text-decoration: underline;
+}
+
+/* LISTS --------------------------------------------------*/
+header ul,
+footer ul {
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+
+footer ul a {
+	line-height: 2;
+}
+
+/* IMAGES --------------------------------------------------*/
+/* Logo */
+.logo {
+	max-width: 264px;
+	width: 100%;	
+}
+
+/* Long logo in the header */
+.logo img:nth-child(1) {
+	max-width: 264px;
+	width: 100%;	
+	height: auto;
+}
+
+/* Short logo in the header */
+.logo img:nth-child(2) {
+	width: 100%;	
+	height: auto;
+}
+
+/* Showing large images for desktop */
+#large-img {
+	display: block;
+}
+
+/* Hiding small images for mobile */
+#small-img {
+	display: none;
+}
+
+/* Showing square image in About me Page */
+.half-parent .half-content img:nth-child(1) {
+	display: block;
+}	
+
+/* Showing horizontal image on About me Page */
+.half-parent .half-content img:nth-child(2) {
+	display: none;
+}	
+
+/* HEADER --------------------------------------------------*/
+/* Parent container for the header */
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: 92px;
+	margin-bottom: 64px;
+}
+
+/* Header > .nav-bar */
+.nav-bar {
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 70px;
+}
+
+/* .nav-bar > nav */
+nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* nav > .header-menu */
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 300px;
+	width: 100%;
+}
+
+/* CONTENT --------------------------------------------------*/
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+/* main > .content */
+.content {	
+	max-width: 1440px;
+	width: 100%;
+	padding: 0 70px;
+}
+
+/* Padding for flex items - Down */
+.three-col-parent a:nth-child(1),
+.three-col-parent a:nth-child(2),
+.three-col-parent a:nth-child(3),
+.three-col-parent .three-col-child:nth-child(2),
+.three-col-parent .three-col-child:nth-child(3),
+.three-col-parent .three-col-child:nth-child(4),
+.cc-img-small figure:nth-child(1),
+.cc-img-small figure:nth-child(2){
+	padding-bottom: 32px;
+}
+
+/* Padding for flex items - Up */
+.three-col-parent a:nth-child(4),
+.three-col-parent a:nth-child(5),
+.three-col-parent a:nth-child(6),
+.three-col-parent .three-col-child:nth-child(5),
+.three-col-parent .three-col-child:nth-child(6),
+.three-col-parent .three-col-child:nth-child(7),
+.cc-img-small figure:nth-child(3),
+.cc-img-small figure:nth-child(4) {
+	padding-top: 32px;
+} 
+
+
+
+/* INTRO TITLE --------------------------------------------------*/
+.title-parent {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
+}
+
+/* main > .content */
+.title-child {	
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;	
+	width: 100%;
+	padding:  0;
+}
+
+.title-content {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;	
+	max-width: 846px;
+	width: 100%;
+	text-align: center;
+	padding: 0 70px;
+}
+
+/* h1 tag in .title-content */
+.title-content h1 {	
+	padding: 16px;
+}
+
+/* p tag in .title-content */
+.title-content p {	
+	max-width: 514px;
+	width: 100%;
+}
+
+/* Image in the intro */
+.title-img {
+	width: 100%;
+	padding: 10%;
+	margin: 64px 0;
+}
+
+.title-img img {
+	border-radius: 4px;	
+	box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: auto;
+}
+
+
+/* 50/50 CONTENT --------------------------------------------------*/
+.half-parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 32px 0;
+}
+
+/* .half-parent > .half-content */
+.half-content {
+	width: 50%;
+}
+
+/* Width of the text in .half-content */
+.half-content h1,
+.half-content p {
+	max-width: 560px;
+	width: 90%;
+}
+
+/* Padding between h1/h2/h3 & p */
+.half-content p {
+	padding-top: 16px;
+}
+
+/* Image size */
+.half-content img {
+	max-width: 650px;
+	width: 100%;
+}
+
+/* 3 COLUMN CONTENT --------------------------------------------------*/
+.three-col-parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 64px 0;
+}
+
+/* .three-col-parent > .three-col-parent a */
+.three-col-parent a,
+.three-col-child {
+	max-width: 393px;
+	width: 27vw;
+}
+
+/* Make the last child unclickable */
+a .three-col-parent a:nth-child(6) {
+	pointer-events: none;
+}
+
+/* Center-align the heading text */
+.three-col-parent .cc-content {
+	text-align: center;
+}
+
+/* Container for the image */
+a .three-col-image,
+.three-col-image {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Height size for clickable asset */
+a .three-col-image {
+	height: 417px;
+}
+
+/* The image inside of the container */
+a .three-col-image img {
+	max-width: 286px;
+	width: 85%;
+	height: auto;
+	margin: 48px;
+	border-radius: 4px;	
+	box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
+}
+
+/* The image inside of the container, just the icon */
+.three-col-image img {
+	max-width: 64px;
+	width: 100%;
+	height: auto;
+}
+
+/* Image Hover ------------------- */
+.three-col-child img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+a:hover .three-col-child img {
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+} 
+
+a:hover .three-col-child  h3 {
+  text-decoration: underline !important;
+}
+
+/* Flexbox for 3-col items ------------------- */
+.three-col-content {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding-top: 16px;
+}
+
+/* Padding above h3 in 3-col flexbox ------------------- */
+.three-col-content h3 {
+	padding: 8px 0;
+}
+
+/* CASE STUDY STYLING --------------------------------------------------*/
+/* Case Study Container */
+.cc-parent {
+	padding: 64px 0;
+}
+
+/* Content title */
+.cc-content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 64px;
+}
+
+/* cc-content > cc-child */
+.cc-child {
+	max-width: 620px;
+	width: 100%;
+}
+
+/* Padding for p item in cc-child */
+.cc-child p {
+	padding-top: 16px;
+}
+
+/* Padding for h4 item in cc-child */
+.cc-child h4 {
+	padding-bottom: 16px;
+}
+
+/* Image sizing for cc items */
+.cc-img-big img {
+	width: 100%;
+}
+
+.cc-img-mid {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+}
+
+.cc-img-mid img {
+	max-width: 620px;
+	width: 100%;
+}
+
+.cc-img-small {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.cc-four {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 846px;
+	width: 59vw;
+}
+
+.cc-row-flex {
+	max-width: 393px;
+	width: 27vw;
+}
+
+.cc-img-small img {
+	width: 100%;
+	height: auto;
+}
+
+figure h3 {
+	padding: 8px 0;
+}
+
+/* Suicide is Different - Bg Color */
+#sid-bg {
+	background-color: #4EA459; 
+}
+
+/* Green Shirt Studio - Bg Color */
+#gss-bg {
+	background-color: #3A8149; 
+}
+
+/* Crowd Capital - Bg Color */
+#cc-bg {
+	background-color: #7AB648; 
+}
+
+/* Strata Decision Technology - Bg Color */
+#sdt-bg {
+	background-color: #FF7139; 
+}
+
+/* IDES - Bg Color */
+#ides-bg {
+	background-color: #17397D; 
+}
+
+/* Blank Case Study - Bg Color */
+#no-bg {
+	background-color: transparent; 
+}
+
+/* FOOTER --------------------------------------------------*/
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #F8F6F5;
+	margin-top: 48px;
+}
+
+/* footer > .footer-container */
+.footer-container {
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 70px;
+}
+
+/* .footer-container > .footer-content */
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 32px 0;
+}
+
+/* .footer-content > .footer-info */
+.footer-info {
+	max-width: 414px;
+	width: 100%;
+	margin: 32px 0;
+}
+
+/* .footer-content > .bottom-nav-container  */
+.bottom-nav-container {
+	display: flex;
+	justify-content: space-between;	
+	max-width: 620px;
+	width: 100%;
+}
+
+/* .bottom-nav-container > .footer-menu  */
+.footer-menu {
+	margin: 32px 0;
+	width: 167px;
+}
+
+/* Adding space below the logo  */
+footer .logo img,
+footer h5 {
+	margin-bottom: 16px;
+}
+
+/* Container for back to top */
+.curve-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	padding: 0 24px;
+}
+
+/* Container for back to top */
+.curve-container a {
+	width: auto;
+}
+
+
+/* .curve-container > .curve-parent */
+.curve-parent {
+	display: flex;
+	justify-content: flex-end;
+	width: auto;
+	position: relative;
+}
+
+.curve-parent img {
+	max-width: 394px;
+	width: 100%;
+}
+
+/* .curve-parent > .centered */   
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+
+
+/* 1074px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 1074px) {	
+	/* IMAGES --------------------------------------------------*/
+	/* Image visibility on the About me Page */
+	.half-parent .half-content img:nth-child(1) {
+		display: none;
+	}	
+
+	.half-parent .half-content img:nth-child(2) {
+		display: block;
+	}		
+	
+	/* 50/50 CONTENT --------------------------------------------------*/
+	.half-parent {
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+
+	/* .half-parent > .half-content */
+	.half-content {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	/* Width of the text in .half-content */
+	.half-content h1,
+	.half-content p {
+		max-width: 620px;
+		width: 100%;
+	}
+	
+	/* Image size */
+	.half-content img {
+		max-width: 100%;
+	}
+	
+	
+	/* FOOTER --------------------------------------------------*/
+	/* .footer-container > .footer-content */
+	.footer-content {
+		flex-flow: column nowrap;
+		align-items: center;
+		text-align: center;
+	}
+
+	/* .footer-content > .footer-info */
+	.footer-info {
+		max-width: 620px;
+	}
+
+	/* .footer-content > .bottom-nav-container  */
+	.bottom-nav-container {
+		flex-flow: column nowrap;
+		align-items: center;
+		max-width: 620px;
+	}
+/*End @1074 media query */
+} 
+
+
+/* 846px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 846px) {
+	/* 3 COLUMN CONTENT --------------------------------------------------*/
+	.three-col-parent {
+		flex-flow: column nowrap;
+		align-items: center;
+	} 
+	
+	/* .three-col-parent > .three-col-parent a */
+	.three-col-parent a {
+		max-width: 846px;
+		width: 100%;
+	}  
+	
+	/* Container for the image */
+	.three-col-image {
+		height: auto;
+	}
+	
+	/* The image inside of the container  */
+	.three-col-image img {
+		max-width: 286px;
+		width: 85%;
+		margin: 64px;
+	}
+
+	/* Content in the card */
+	.three-col-content p {
+		max-width: 620px;
+		width: 100%;
+	}
+
+	/* Blank Case Study - Bg Color */
+	.three-col-parent a:nth-child(6) {
+		display: none;
+		background-color: transparent; 
+	}
+	
+	/* CASE STUDY STYLING --------------------------------------------------*/
+	.cc-four {
+		flex-flow: column nowrap;
+		justify-content: center;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.cc-row-flex {
+		max-width: 100%;
+		width: 100%;
+	}
+
+/*End @846px media query */
+}
+
+
+/* 620px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 620px) {	
+	/* TYPOGRAPHY --------------------------------------------------*/
+	/* Font Sizes ---*/
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	h4, 
+	nav a,
+	figcaption > p,
+	footer p,
+	footer a,
+	.backwards {
+		font-size: 14px;
+	}
+	
+	/* IMAGES --------------------------------------------------*/
+	/* Logo */
+	.logo {
+		max-width: 36px;
+		width: 100%;	
+		margin-right: 10%;
+	}
+	
+	#large-img {
+		display: none;
+	}
+
+	#small-img {
+		display: block;
+	}	
+	
+	/* HEADER --------------------------------------------------*/
+	/* Parent container for the header */
+	header {
+		flex-flow: row wrap;
+		height: auto;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		padding-bottom: 16px;
+		margin-bottom: 0;
+	}
+	
+	/* Header > .nav-bar */
+	.nav-bar {
+		max-width: 100%;
+		padding: 24px 40px 0 40px;
+	}	
+	
+	/* .nav-bar > nav */
+	nav {
+		flex-flow: row nowrap;
+		width: 100%;
+	}
+	
+	/* nav > .header-menu */
+	.header-menu {
+		padding: 16px 0;
+		max-width: 250px;
+		width: 100%;
+	}	
+	
+	/* CONTENT --------------------------------------------------*/
+	/* main > .content */
+	.content {	
+		padding: 0 40px;
+	}
+	
+	/* INTRO TITLE --------------------------------------------------*/
+	/* main > .content */
+	.title-child {	
+		padding: 64px 0;
+		text-align: center;
+	}
+	
+	/* 50/50 CONTENT --------------------------------------------------*/
+	/* .half-parent > .half-content */
+	.half-parent {
+		padding: 20px 0;
+	}
+	
+	/* .half-parent > .half-content */
+	.half-content {
+		padding: 12px 0;
+	}
+	
+	/* 3 COLUMN CONTENT --------------------------------------------------*/
+	.three-col-parent {
+		padding: 16px 0;
+	} 
+	
+	/* .three-col-parent > .three-col-parent a */
+	.three-col-parent a {
+		padding: 32px 0;
+	}  	
+	
+/*End @620px media query */
+}
+
+/* 414px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 414px) {
+	
+	/* CONTENT --------------------------------------------------*/
+	/* main > .content */
+	.content {	
+		padding: 0 24px;
+	}
+/*End @414px media query */
+}

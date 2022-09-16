@@ -1,0 +1,108 @@
+		<title>Strata Decision Technology - Case Study</title>
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="../favicon_32.png">
+		<style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+        }
+        #dialogText {
+            padding: 10px 30px;
+            color: white;
+            background-color: #333333;
+        }
+        
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: #EFEFEF;
+        }
+        
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            border: solid transparent 0;
+            border-radius: 4px;
+						box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+        }
+        #passArea {
+            padding: 20px 30px;
+            background-color: white;
+        }
+        #passArea > * {
+            margin: 5px auto;
+        }
+			
+        #pass {
+            width: 100%;
+            height: 40px;
+            font-size: 30px;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        .notifyText {
+            display: none;
+        }
+        
+        #invalidPass {
+            color: red;
+        }
+        
+        #success {
+            color: #3A8149;
+        }
+        
+        #submitPass {
+          font-size: 16px;
+					color: #FFFFFF;
+					font-family: Inter, arial, sans-serif;
+					padding: 8px 16px;
+          border-radius: 4px;
+          background-color: #0290EE;
+          border: solid transparent 0;
+          float: right;
+        }
+			
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #attribution {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        #attribution, #attribution a {
+            color: #999;
+        }
+    </style>

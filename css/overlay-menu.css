@@ -1,0 +1,55 @@
+	.overlay-container {
+		display: none;
+		position: fixed;
+		height: 100%;
+		width: 100vw;
+		top: 92px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color:#FFFFFF;
+		z-index: 2; 
+		overflow: hidden;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 0 70px;
+	}
+
+	.overlay {
+
+	}	
+
+	header button {
+		background-color: transparent;
+		border: none;
+	}
+
+	button i {
+		font-size: 24px;
+	}
+	button i:hover {
+		color: #0290EE;
+	}
+
+.menu-icon,
+.close-icon {
+		display: none;
+	}
+
+
+
+
+/* 846px RESPONSIVE DESIGN --------------------------------------------- */
+@media screen and (max-width: 846px) {
+
+
+
+	.menu-icon {
+		display: block;
+	}
+
+
+}
+
+
+
+
