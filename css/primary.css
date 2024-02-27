@@ -206,7 +206,7 @@ header ul,
 footer ul {
 	list-style-type: none;
 	margin: 0;
-  padding: 0;
+	padding: 0;
 }
 
 footer ul a {
@@ -386,7 +386,7 @@ header {
 nav {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	width: auto;
 }
 
 /* nav > .header-menu */
@@ -394,17 +394,17 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 256px;
-	width: 100%;
+	width: 10%;
 }
 
 /* PRIMARY WRAPPER --------------------------------------------------*/
 main {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 }
 
 /* main > .content */
