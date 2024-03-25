@@ -131,6 +131,7 @@ h5,
 }
 
 h4,
+
 nav a,
 figcaption,
 .three-col-content p,
@@ -167,6 +168,7 @@ strong > a {
 
 #special-txt {
 	margin-top: 16px;
+	color: #FF7139;
 	letter-spacing: 0.025em;
 }
 
@@ -284,16 +286,6 @@ a .three-col-image img {
 /* DonorDrive - Bg Color */
 #dd-bg {
 	background-color: #12A0D7;
-}
-
-/* Beauty App - Bg Color */
-#beauty-bg {
-	background-color: #414141;
-}
-
-/* Shipment Widget - Bg Color */
-#shipment-bg {
-	background-color: #5756B3;
 }
 
 /* Blank Case Study - Bg Color */
@@ -442,7 +434,7 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	max-width: 650px;
+	max-width: 620px;
 	width: 100%;
 	padding: 64px 0;
 }
@@ -556,9 +548,7 @@ a .three-col-image {
 .three-col-item #cc-bg img,
 .three-col-item #sdt-bg img,
 .three-col-item #ides-bg img,
-.three-col-item #dd-bg img, 
-.three-col-item #beauty-bg img,
-.three-col-item #shipment-bg img  {
+.three-col-item #dd-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
@@ -659,16 +649,6 @@ footer {
 	width: 100%;
 	padding: 0 70px;
 }
-
-.copyright-container {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	text-align: center;
-	padding: 24px;
-}
-
-
 
 /* .footer-container > .footer-content */
 .footer-content {
@@ -949,6 +929,7 @@ footer h5 {
 	header {
 		flex-flow: row wrap;
 		height: auto;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 
 	/* Header > .nav-bar */
