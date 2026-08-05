@@ -66,6 +66,21 @@ a {
 	font-weight: normal;
 }
 
+.content ul,
+.content ol {
+	font-family: Inter, arial, sans-serif;
+	line-height: 1.5;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgb(0, 0, 0, 0.6);
+	margin: 0 0 24px 0;
+	padding-left: 24px;
+}
+
+.content li {
+	margin-bottom: 8px;
+}
+
 h5 {
 	font-family: Inter, arial, sans-serif;
 	line-height: 1.3;
@@ -293,12 +308,21 @@ a .three-col-image img {
 
 /* Shipment Widget - Bg Color */
 #shipment-bg {
-	background-color: #5756B3;
+	background-color: #041F41;
 }
 
 /* Blank Case Study - Bg Color */
 #no-bg {
 	background-color: transparent;
+}
+
+/* Image at its native size instead of stretching full width */
+#natural-img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
 }
 
 /* PADDING --------------------------------------------------*/
@@ -481,6 +505,18 @@ main {
 
 .content-img-child {
 	margin: 0 32px;
+}
+
+/* Vertically stacked image pairs (one image above another in the same container) */
+.content-img-stack {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+}
+
+.content-img-child-stack {
+	margin: 16px 0;
 }
 
 .content-img img {
@@ -913,7 +949,9 @@ footer h5 {
 	}
 
 	p,
-	h5 {
+	h5,
+	.content ul,
+	.content ol {
 		font-size: 16px;
 	}
 

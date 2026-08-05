@@ -1,0 +1,376 @@
+<!-- Edited by Joseph Tajaran. I made this for my Design portfolio tajaran.design. Nice to meet you :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shipment List View - Case Study</title>
+	<meta name="author" content="Joseph Tajaran">
+	<meta name="robots" content="noindex, nofollow">
+
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="../favicon_32.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/primary.css">
+
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
+
+	<!-- Fancybox lightbox: http://fancyapps.com/fancybox/3/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="../fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<script src="../fancybox/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+	<div class="joseph">
+		<!-- BACK TO THE TOP ID -------------------->
+		<a id="top"></a>
+
+		<!-- NAV BAR -------------------->
+		<header>
+			<div class="nav-bar">
+				<nav>
+					<!-- Go Back -->
+					<div class="go-back">
+						<a href="../index.html"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+
+					<!-- Navigation Menu -->
+					<ul class="header-menu">
+						<li><a href="../about.html">About Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- START MAIN GRID WRAPPER -------------------->
+		<main>
+			<div class="wrapper">
+				<!-- INTRO -------------------->
+				<section class="content-parent" id="bg-div">
+					<div class="content-child">
+						<div class="content" id="center-align">
+							<h4>Feature</h4>
+							<h1>Shipment List View</h1>
+							<p id="intro-p">A validated table interaction pattern now used as the system default for every table-based page.</p>
+						</div>
+					</div>
+					<!-- 01 - Final table view, full width. -->
+					<div class="content-img-container">
+						<div class="content-img" id="shipment-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/01-final-table-view.png">
+									<img src="../images/shipment-list/01-final-table-view.png" alt="Final table view, full width">
+								</a>
+							</div>
+						</div>
+						<figcaption>01 - Final table view, full width.</figcaption>
+					</div>
+				</section>
+
+				<!-- START OVERVIEW -------------------->
+				<section class="three-col-parent">
+					<div class="three-col-child" id="bottom-padding">
+						<!-- 3-Col Content -->
+						<div class="content-child">
+							<div class="content" id="center-align">
+								<h4>Overview</h4>
+								<h2>The table component is deceptively easy.</h2>
+							</div>
+						</div>
+
+						<!-- Company Profile -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/sdt-logo-icon.svg" alt="Couldn't use the Ascent logo so this is a proxy.">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>Company Profile</h3>
+								<p>Ascent leverages technology to improve the logistics process.</p>
+							</div>
+						</div>
+
+						<!-- The Problem -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Jigsaw_620550%201.svg" alt="Jigsaw icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Problem</h3>
+								<p>Users needed to sort, filter, and customize dense shipment tables to fit their own workflow.</p>
+							</div>
+						</div>
+
+						<!-- The Outcome -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Check_2742243.svg" alt="Checkmark icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Outcome</h3>
+								<p>A validated table interaction pattern now used as the system default for every table-based page.</p>
+							</div>
+						</div>
+
+						<!-- My Role -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_User_608611.svg" alt="Person icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Role</h3>
+								<p>Product Designer</p>
+							</div>
+						</div>
+
+						<!-- My Team -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_work%20team_611117.svg" alt="Team icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Team</h3>
+								<p>1 PM, 1 BA, 4 Full Stack Dev, 1 QA.</p>
+							</div>
+						</div>
+
+						<!-- My Contribution -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Package_861442.svg" alt="Box icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Contribution</h3>
+								<p>Led research and conceptualized the design and its various iterations.</p>
+							</div>
+						</div>
+					</div>
+				<!-- END OVERVIEW -------------------->
+				</section>
+
+				<hr>
+
+				<!-- SUMMARY -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Summary</h4>
+							<h2>The table component is deceptively easy</h2>
+							<p>Tables are everywhere in data driven B2B products. They are one of the first complex components we can leverage. Tables don't just show data, users use that data to make potentially high risk decisions. At Ascent, Operation users make time sensitive decisions on shipment deployment. Is the cargo on track to their destination? Can they identify when a truck requires triage? They rely on live data populating without delay, as not monitoring a late shipment can cost a customer thousands of dollars.</p>
+							<p>What looks like four simple interactions, filtering, sorting, reordering, and hiding columns, carries real usability risk once combined. A manager who needs to hold agents accountable for a shipment's status has a very different relationship to that "hide column" button than an agent triaging their own workload. In this project we examined how we might optimize our existing table from <a href="https://www.ag-grid.com/" target="_blank" rel="noopener">AG Grid</a> in our new product line, and validated those decisions with the people who use it every day.</p>
+							<p>Ultimately, what we landed on was a solution that went beyond this feature; it became how we used this component throughout the entire product.</p>
+						</div>
+					</div>
+					<!-- 02 - One of the more complex tables from the previous iteration of this product. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/02-4-0-table.png">
+									<img src="../images/shipment-list/02-4-0-table.png" alt="One of the more complex tables from the previous iteration of this product">
+								</a>
+							</div>
+						</div>
+						<figcaption>02 - One of the more complex tables from the previous iteration of this product.</figcaption>
+					</div>
+				</section>
+
+				<!-- THE PROBLEM -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>The Problem</h4>
+							<h2>We needed to re-evaluate how we use tables in the new product</h2>
+							<p>A key gap in our legacy product was that filtering and sorting lived on a separate page from the table itself, breaking the uninterrupted workflow our operations team relied on. This was a feature we knew we needed to bring into the new product, but we wanted to go further than simply porting it over as is.</p>
+							<p>AG Grid's feature set is already comprehensive: users can search within a column, they can reorder columns, they can sort, etc. We could have easily moved forward with what was out of the box, but the team identified necessary experience refinements that best fit our primary users who monitor shipments through the table: our operations team.</p>
+							<p>The operations team uses the table as their primary object. They check it throughout their shift. Each group of agents is assigned to "pods" which are a cluster of agents who are dedicated to a specific customer or customers. Every agent and every pod has their own unique workflow and needs, hence the table needed to have customization features that fit their use case.</p>
+							<p>Customization occurs in some of the more baseline table features: sorting, filtering, and hiding. Features that already existed out of the box via AG Grid, but lacked the experience rich features our agents needed to make time sensitive decisions.</p>
+							<p>The goal was to identify how we might provide these customization options and ensure they are embedded as part of their workflow.</p>
+						</div>
+					</div>
+					<!-- 03 - Basic filter and sorting that could only be accessed in another page of our legacy product. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/03-apt-filtering.png">
+									<img src="../images/shipment-list/03-apt-filtering.png" alt="Basic filter and sorting that could only be accessed in another page of our legacy product">
+								</a>
+							</div>
+						</div>
+						<figcaption>03 - Basic filter and sorting that could only be accessed in another page of our legacy product.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- DISCOVERY -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Discovery</h4>
+							<h2>AG Grid had a gap in communicating affordance that needed to be resolved</h2>
+							<p>I believe the primary issue I had with AG Grid was that it didn't do a good job communicating affordances. It wasn't immediately clear when a sort, filter or hide was enacted on the component. From prior research with our Operation agents, their workflow was primarily different windows on the same screen. Rather than clicking through the product they would have separate windows showing different states of the system: the table list, several shipment pages, email. Doing this allowed them to keep track of any minute-to-minute changes that may come up as they multitask. Lacking clarity on whether an action was done increases the noise, and I wanted to reduce any guess work that would happen in an actual Operation user workflow. Persistent visual confirmation of state within the same screen (what's filtered, sorted, etc.) helps streamline this.</p>
+							<p>I landed on a conventional solution: establish a table tool bar which managed hiding and communicated states for sorting and filtering. So when a user interacted with an individual column, they were able to see which column was being affected with an option to undo it. A simple interaction but an important one that grounds the user to where they are currently and gives them insight on what interactions to perform next.</p>
+						</div>
+					</div>
+					<!-- 04 - At a high level I wanted to make input selection more visible when a user makes a design to filter results. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/04-conceptual-designs.png">
+									<img src="../images/shipment-list/04-conceptual-designs.png" alt="At a high level I wanted to make input selection more visible when a user makes a design to filter results">
+								</a>
+							</div>
+						</div>
+						<figcaption>04 - At a high level I wanted to make input selection more visible when a user makes a design to filter results.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- RESEARCH & FINDINGS -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Research &amp; Findings</h4>
+							<h2>Learned a couple things beyond just validating tasks</h2>
+							<p>Since the dev effort was going to be somewhat large, we didn't want to build on assumption so I proposed running some usability tests via a Figma prototype through some of our business units to verify that we were on the right track. I was limited by time and resources and was able to talk to 3 users with a couple who were in managerial roles but had experience as operators. The usability goals were: (1) do users understand the new filter interaction, (2) do users understand the new sort interaction, (3) do users understand how to reorder columns, and (4) do users understand how to hide or show columns.</p>
+						</div>
+					</div>
+					<!-- 05 - Snippet of the results which includes the validation chart. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/05-research-results.png">
+									<img src="../images/shipment-list/05-research-results.png" alt="Snippet of the results which includes the validation chart">
+								</a>
+							</div>
+						</div>
+						<figcaption>05 - Snippet of the results which includes the validation chart.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>All four interactions were validated across all participants. However, the more useful outcome was what surfaced alongside the pass rate.</p>
+							<p>First, users identified a potential risk of giving the option to hide the status column. The status column is the most important data to look at when they make a decision and it was important not only for accountability (agent can't say they missed it because it was hidden), but also it's a necessary guardrail as there is no need to hide this column anyway.</p>
+							<p>Second, we could potentially expand on the tool bar further and not have it only communicate affordance, but provide further interaction at the table level. So instead of having to click through each column, users could not only hide, but also sort and filter at the table level.</p>
+						</div>
+					</div>
+					<!-- 06 - A user selecting a filter option via column (above) and a status affordance confirming the selection (below). -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/06-table-interaction-example.png">
+									<img src="../images/shipment-list/06-table-interaction-example.png" alt="More concrete example of a user selecting a filter option via column and a status affordance confirming the selection">
+								</a>
+							</div>
+						</div>
+						<figcaption>06 - More concrete example of a user selecting a filter option via column (above) and a status affordance confirming the selection (below).</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- THE DESIGN -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>The Design</h4>
+							<h2>Figuring out how to make the interaction even faster</h2>
+							<p>In addition to an affordance being clear, we reconsidered adding more depth to the interaction. After we launched the initial scope of this, leveraging the research findings, we decided to expand the feature further by giving users the option to perform interactions at the table level.</p>
+							<p>Transitioning from column level to table level interaction raised two challenges: how to track state across the whole table, and how users would perform multiple types of interaction within a single control. We would have to consider column based interactions and more: selecting a filter/sort, defining criteria (e.g. start to end), and defining priority.</p>
+						</div>
+					</div>
+					<!-- 07 - Redefined how the table button interaction by including column level features at the table level. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/07-new-sort-filter-interaction.png">
+									<img src="../images/shipment-list/07-new-sort-filter-interaction.png" alt="Redefined how the table button interaction by including column level features at the table level">
+								</a>
+							</div>
+						</div>
+						<figcaption>07 - Redefined how the table button interaction by including column level features at the table level.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>In the months that followed we made incremental changes to the table based on feedback from our weekly sessions with our pilot users and from our business priorities as well: searching for values within a column, and mobile responsiveness.</p>
+						</div>
+					</div>
+					<!-- 08 - Users can search for lengthy columns per column (left) and have the option to view in card view for mobile users (right). -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/08-table-search-and-card-view.png">
+									<img src="../images/shipment-list/08-table-search-and-card-view.png" alt="Users can search for lengthy columns per column and have the option to view in card view for mobile users">
+								</a>
+							</div>
+						</div>
+						<figcaption>08 - Users can search for lengthy columns per column (left) and have the option to view in card view for mobile users (right).</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- OUTCOME -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Outcome</h4>
+							<h2>Over the course of the product, this table became the template for how we handle data</h2>
+							<p>The feature set we established in the shipment list was broad enough that it simply became our go-to component for most areas of the product.</p>
+							<p>While I don't have formal metrics comparing this to the legacy experience, I've sat in on sessions with operations agents using this pattern across different pages and haven't seen anyone get stuck on the filter, sort, or hide interactions we validated early on.</p>
+						</div>
+					</div>
+					<!-- 09 - Defining the spec of the table for the shipment list view. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/shipment-list/09-table-spec.png">
+									<img src="../images/shipment-list/09-table-spec.png" alt="Defining the spec of the table for the shipment list view">
+								</a>
+							</div>
+						</div>
+						<figcaption>09 - Defining the spec of the table for the shipment list view.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- REFLECTION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Reflection</h4>
+							<h2>I believe if you have enough lead time, it's valuable to test your most reusable components</h2>
+							<p>The table is ubiquitous in design: it exists everywhere in B2B and elsewhere. There have been many solutions for tables in the wild, even to the extent where you can sell it as a solved component (via AG Grid), but if your user base is niche enough, I believe it's more interesting to understand their specific use case and how to tailor the component to their needs. An agent looking at the table for live shipment data is of course different from a board member looking to see how many shipments we're getting in general. We sometimes surprise ourselves on how unique users interact with common components.</p>
+							<p>With more time, I'd want a sample weighted more toward frontline agents rather than leads, since their day to day relationship with the table is different from a manager's, and that gap is exactly what the accountability finding surfaced.</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Go Back -->
+				<div class="go-back-container">
+					<div class="go-back">
+						<a href="../index.html"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+				</div>
+		</main>
+
+		<!-- FOOTER -------------------->
+		<footer>
+			<div class="curve-container">
+				<a href="#top">
+					<div class="curve-parent">
+						<img src="../images/assets/curve-triangle.svg" alt="Click back to top">
+						<div class="centered">Back to Top</div>
+					</div>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
