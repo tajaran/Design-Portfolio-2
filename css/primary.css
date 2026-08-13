@@ -566,6 +566,7 @@ main {
 #three-col-padding {
 	justify-content: center;
 	gap: 0 60px;
+	padding-bottom: 160px;
 }
 
 /* 3rd Lvl Wrapper - Flex Items ----------*/
@@ -1023,6 +1024,11 @@ footer h5 {
 	.content,
 	#three-col-padding {
 		padding: 32px 0;
+	}
+
+	/* Keep clearance under the last row so the fixed footer doesn't cover it */
+	#three-col-padding {
+		padding-bottom: 160px;
 	}
 
 	/* Adding radius and box shadow */
