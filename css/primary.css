@@ -19,6 +19,14 @@ body {
 	width: 100%;
 }
 
+/* Home page: keep the footer at the true bottom of the page even when
+   content is shorter than the viewport, instead of pinning it on screen */
+#home .joseph {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
 /* Horizontal line */
 hr {
   border: 1px solid rgba(0,0,0,0.1);
@@ -439,6 +447,11 @@ main {
 	height: auto;
 }
 
+/* Home page: let main grow to push the footer down to the bottom of the page */
+#home main {
+	flex: 1 0 auto;
+}
+
 /* main > .content */
 .wrapper {
 	max-width: 1440px;
@@ -566,7 +579,6 @@ main {
 #three-col-padding {
 	justify-content: center;
 	gap: 0 60px;
-	padding-bottom: 160px;
 }
 
 /* 3rd Lvl Wrapper - Flex Items ----------*/
@@ -694,6 +706,12 @@ footer {
 	bottom: 0;
 	width: 100%;
 	background-color: transparent;
+}
+
+/* Home page footer sits in normal flow at the bottom of the page instead of pinned to the screen */
+#home footer {
+	position: static;
+	flex-shrink: 0;
 }
 
 /* footer > .footer-container */
@@ -1024,11 +1042,6 @@ footer h5 {
 	.content,
 	#three-col-padding {
 		padding: 32px 0;
-	}
-
-	/* Keep clearance under the last row so the fixed footer doesn't cover it */
-	#three-col-padding {
-		padding-bottom: 160px;
 	}
 
 	/* Adding radius and box shadow */
