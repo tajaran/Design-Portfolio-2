@@ -315,7 +315,7 @@
 						<div class="content">
 							<h4>The Design</h4>
 							<h2>The collapsible container decision</h2>
-							<p>Ultimately, I leaned into chunking via collapsible containers. Since these sections are linear, we hide/show containers as our system registers valid input for required fields. So as a user completes form fields going up to down, more fields will show. This would circumvent the load of seeing it all at once and have them focus on one section at a time, similar chunking pattern to a wizard.</p>
+							<p>Ultimately, I leaned into chunking via collapsible containers. The system would default to one container first then the others would open as the user completes all relevant required fields. This would circumvent the load of seeing it all at once and have them focus on one section at a time, similar chunking pattern to a wizard.</p>
 						</div>
 					</div>
 					<!-- 09 - I advocated for a single column approach, but ultimately agreed the trade off was a longer page. -->
@@ -332,7 +332,7 @@
 
 					<div class="content-child">
 						<div class="content">
-							<p>Additionally, we had to make a decision on how we communicate validations the contingent fields in each section could impact one another. I advocated for us to lean more towards accessible options and found a middle ground with the team where I felt we were accessible enough and design felt simple enough to render and not distract from other parts of the long page.</p>
+							<p>Additionally, we had to identify an accessible option to communicate when sections were being completed.</p>
 						</div>
 					</div>
 					<!-- 10 - Explaining what accessible options look like. -->
@@ -349,7 +349,7 @@
 
 					<div class="content-child">
 						<div class="content">
-							<p>Finally, since the page was long, I wanted a way for users to navigate the page if they either made a mistake or changed their mind. I suggested a sticky anchor navigation section that followed the user as they traveled up and down the page. This would be more useful once we scaled and allowed editing this page in the future.</p>
+							<p>Finally, since the page was long, I wanted a way for users to navigate the page if they either made a mistake or changed their mind. I suggested a sticky anchor navigation section that followed the user as they traveled up and down the page. This would be more useful once we scaled and allowed page edits in the future.</p>
 						</div>
 					</div>
 					<!-- 11 - Early iterations of the anchor navigation. -->
@@ -373,7 +373,7 @@
 						<div class="content">
 							<h4>Outcome</h4>
 							<h2>The pattern outlived the page</h2>
-							<p>The pattern and components created during the initial scope have transcended this screen and exist all throughout the system for how we show groups of form fields and how users navigate long pages. It has also evolved significantly for over a year now as we increased scope, added further complexity and nuance in the feature set for this page. While I don't have formal metrics comparing the two approaches, I've sat in on sessions with operations users completing this form and haven't seen anyone get stuck navigating the section logic.</p>
+							<p>The pattern and components created during the initial scope have transcended this screen. They are our default treatment for groups of form fields and long pages. Over the year it has changed as scope increased, adding further complexity. While I don't have formal metrics comparing the two approaches, I've sat in on sessions with operations users completing this form and haven't seen anyone get stuck navigating the section logic.</p>
 						</div>
 					</div>
 					<!-- 12 - Specific improvement (above) and the current version of shipment entry after numerous iterations over the year (bottom). -->
