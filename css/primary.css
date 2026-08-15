@@ -661,13 +661,17 @@ a .three-col-image {
 	margin: 48px;
 }
 
-/* Crop a tall card thumbnail from the top instead of the shared scaled/margined treatment above */
-.three-col-item #milkweed-bg img.crop-top {
+/* Inset the Milkweed card thumbnail the same 48px as the shared margin-based treatment above, */
+/* but via container padding + object-fit: contain so the full (non-square) image isn't cropped */
+.three-col-image#milkweed-bg {
+	padding: 48px;
+}
+
+.three-col-item #milkweed-bg img.contain-inset {
 	max-width: none;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	object-position: top;
+	object-fit: contain;
 	margin: 0;
 }
 
