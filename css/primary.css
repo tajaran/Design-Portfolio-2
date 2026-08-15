@@ -662,8 +662,12 @@ a .three-col-image {
 }
 
 /* Inset the Milkweed card thumbnail the same 48px as the shared margin-based treatment above, */
-/* but via container padding + object-fit: contain so the full (non-square) image isn't cropped */
+/* but via container padding + object-fit: contain so the full (non-square) image isn't cropped. */
+/* Height follows the thumbnail's own 1440x900 aspect ratio instead of the shared 417px card */
+/* height, so there's no leftover letterboxing gap above/below the image. */
 .three-col-image#milkweed-bg {
+	height: auto;
+	aspect-ratio: 8 / 5;
 	padding: 48px;
 }
 
