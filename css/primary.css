@@ -319,6 +319,11 @@ a .three-col-image img {
 	background-color: #017D93;
 }
 
+/* Civic Tech - Bg Color (used across civic tech case studies, except IDES) */
+#civic-bg {
+	background-color: #B90000;
+}
+
 /* Blank Case Study - Bg Color */
 #no-bg {
 	background-color: transparent;
