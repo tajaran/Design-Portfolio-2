@@ -618,7 +618,8 @@ a .three-col-image {
 .three-col-item #ides-bg img,
 .three-col-item #dd-bg img, 
 .three-col-item #beauty-bg img,
-.three-col-item #shipment-bg img  {
+.three-col-item #shipment-bg img,
+.three-col-item #civic-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
