@@ -1113,6 +1113,21 @@ footer h5 {
 
 	.hero-img-container {
 		gap: 32px;
+		flex-wrap: wrap;
+	}
+
+	/* Mobile and tablet crops stay side-by-side in the first row */
+	.hero-img-crop:nth-child(1),
+	.hero-img-crop:nth-child(2) {
+		flex: 1 1 calc(50% - 16px);
+	}
+
+	/* Desktop crop drops to its own full-width row, with a shorter,
+	   proportional height instead of the 3-across desktop height */
+	.hero-img-crop:nth-child(3) {
+		flex: 1 1 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
 	}
 
 	/* Adding radius and box shadow */
