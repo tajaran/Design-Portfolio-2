@@ -653,7 +653,8 @@ a .three-col-image {
 .three-col-item #dd-bg img, 
 .three-col-item #beauty-bg img,
 .three-col-item #shipment-bg img,
-.three-col-item #civic-bg img  {
+.three-col-item #civic-bg img,
+.three-col-item #pdop-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
@@ -661,7 +662,7 @@ a .three-col-image {
 }
 
 /* Crop a tall card thumbnail from the top instead of the shared scaled/margined treatment above */
-.three-col-item #civic-bg img.crop-top {
+.three-col-item #milkweed-bg img.crop-top {
 	max-width: none;
 	width: 100%;
 	height: 100%;
