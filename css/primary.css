@@ -558,7 +558,7 @@ main {
 }
 
 .hero-img-crop {
-	height: 941px;
+	height: 244.05px;
 	overflow: hidden;
 	flex: 1;
 	min-width: 0;
@@ -675,6 +675,13 @@ div .three-col-image img {
 	max-width: 64px;
 	width: 100%;
 	height: auto;
+}
+
+/* Non-square logo used in place of an icon: hold it to the same box as the other icons */
+div .three-col-image img.overview-icon-logo {
+	width: 64px;
+	height: 64px;
+	object-fit: contain;
 }
 
 /* Image hover effects */
