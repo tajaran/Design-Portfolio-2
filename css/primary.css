@@ -238,6 +238,7 @@ footer ul a {
 /* Logo */
 .logo {
 	width: 64px;
+	margin-right: 16px;
 }
 
 /* Long logo in the header */
@@ -439,7 +440,7 @@ nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 8px;
+	gap: 16px;
 	width: auto;
 }
 
