@@ -644,11 +644,6 @@ a .three-col-image {
 	height: 417px;
 }
 
-/* Milkweed card thumbnail: shorter crop height than the shared 417px cards */
-.three-col-image#milkweed-bg {
-	height: 244.05px;
-}
-
 /* Colored-bg image size */
 .three-col-item #sid-bg img,
 .three-col-item #gss-bg img,
