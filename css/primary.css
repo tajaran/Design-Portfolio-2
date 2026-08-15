@@ -558,7 +558,7 @@ main {
 }
 
 .hero-img-crop {
-	height: 244.05px;
+	height: 941px;
 	overflow: hidden;
 	flex: 1;
 	min-width: 0;
@@ -642,6 +642,11 @@ div .three-col-image {
 /* 4th Lvl Wrapper - Colored-bg Container height ----------*/
 a .three-col-image {
 	height: 417px;
+}
+
+/* Milkweed card thumbnail: shorter crop height than the shared 417px cards */
+.three-col-image#milkweed-bg {
+	height: 244.05px;
 }
 
 /* Colored-bg image size */
