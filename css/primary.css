@@ -674,7 +674,7 @@ a .three-col-image,
 div .three-col-image {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
 }
