@@ -651,7 +651,13 @@ main {
    grid's own top padding, and keep it close to the card row below it */
 #three-col-padding > .content-child:first-child .content {
 	padding-top: 0;
-	padding-bottom: 16px;
+	padding-bottom: 8px;
+}
+
+/* Civic Tech landing page: extra breathing room between the hero and the
+   first category section specifically (not between sections generally) */
+#civic-first-section {
+	margin-top: 48px;
 }
 
 /* 3rd Lvl Wrapper - Flex Items ----------*/
