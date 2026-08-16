@@ -646,6 +646,12 @@ main {
 	gap: 60px;
 }
 
+/* Civic Tech page only: narrower gap between header blocks/cards and
+   between cards themselves, without affecting index.html/product-work.html */
+#three-col-padding.civic-grid {
+	gap: 48px;
+}
+
 /* When a centered heading block leads off a #three-col-padding grid (e.g. a
    category header above a row of cards), avoid doubling its padding with the
    grid's own top padding, and keep it close to the card row below it */
