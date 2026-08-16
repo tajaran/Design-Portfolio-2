@@ -18,7 +18,7 @@
 	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="home">
 	<div class="joseph">
 		<!-- BACK TO THE TOP ID -------------------->
 		<a id="top"></a>
@@ -27,14 +27,14 @@
 		<header>
 			<div class="nav-bar">
 				<nav>
-					<!-- Go Back -->
-					<div class="go-back">
-						<a href="index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
-					</div>
-
+					<!-- Logo -->
+					<a href="index.html" class="logo"><img src="images/logos/dark_bg_logo.svg" id="large-logo" alt="My logo"><img src="images/logos/dark_bg_logo.svg" id="small-logo" alt="My logo">
+					</a>
 					<!-- Navigation Menu -->
 					<ul class="header-menu">
-						<li><a href="about.html">About Me</a></li>
+						<li><a href="product-work.html">Product Work</a></li>
+						<li><a href="civic-tech.html">Civic Tech</a></li>
+						<li><a href="about.html">About</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -96,15 +96,21 @@
 		</main>
 
 		<!-- FOOTER -------------------->
-		<footer>
-			<div class="curve-container">
-				<a href="#top">
-					<div class="curve-parent">
-						<img src="images/assets/curve-triangle.svg" alt="Click back to top">
-						<div class="centered">Back to Top</div>
-					</div>
-				</a>
-			</div>
+		<footer class="copyright-container">
+			<script type="text/javascript">
+				function decode(a) {
+				return a.replace(/[a-zA-Z]/g, function(c){
+				return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+				})
+				};
+				function openMailer(element) {
+				var y = decode("znvygb:orahgmre@qbznva.qr");
+				element.setAttribute("href", y);
+				element.setAttribute("onclick", "");
+				element.firstChild.nodeValue = "Open email software";
+				};
+				</script>
+				<p>Interested in working with me? Contact me at&nbsp;<a id="email" href="mailto:joseph@tajaran.com" onclick='openMailer(this);'>joseph@tajaran.com</a></p>
 		</footer>
 	</div>
 </body>
