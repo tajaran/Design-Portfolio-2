@@ -660,10 +660,17 @@ a .three-col-image {
 .three-col-item #shipment-bg img,
 .three-col-item #civic-bg img,
 .three-col-item #pdop-bg img,
-.three-col-item #milkweed-bg img,
-.three-col-item #legalaid-bg img  {
+.three-col-item #milkweed-bg img  {
 	max-width: 286px;
 	width: 85%;
+	height: auto;
+	margin: 48px;
+}
+
+/* Same inset/centering treatment as the cards above, just a slightly smaller max size */
+.three-col-item #legalaid-bg img {
+	max-width: 250px;
+	width: 75%;
 	height: auto;
 	margin: 48px;
 }
