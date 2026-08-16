@@ -353,6 +353,11 @@ a .three-col-image img {
 		linear-gradient(180deg, #613594, #863785);
 }
 
+/* Between Friends - Bg Color (warm orange, distinct from the purple/blue civic tech colors) */
+#betweenfriends-bg {
+	background-color: #C9622D;
+}
+
 /* Blank Case Study - Bg Color */
 #no-bg {
 	background-color: transparent;
@@ -676,7 +681,8 @@ a .three-col-image {
 .three-col-item #civic-bg img,
 .three-col-item #pdop-bg img,
 .three-col-item #milkweed-bg img,
-.three-col-item #chidc-bg img  {
+.three-col-item #chidc-bg img,
+.three-col-item #betweenfriends-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
