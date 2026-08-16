@@ -651,7 +651,7 @@ main {
    grid's own top padding, and keep it close to the card row below it */
 #three-col-padding > .content-child:first-child .content {
 	padding-top: 0;
-	padding-bottom: 8px;
+	padding-bottom: 16px;
 }
 
 /* Chicago Defender Charities lands on the legacy row-rhythm nth-child(4)
