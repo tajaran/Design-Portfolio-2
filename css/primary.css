@@ -345,6 +345,11 @@ a .three-col-image img {
 	background-color: #262B68;
 }
 
+/* CAPE - Bg Gradient (their own rebrand palette) */
+#cape-bg {
+	background: linear-gradient(135deg, #863785, #613594);
+}
+
 /* Blank Case Study - Bg Color */
 #no-bg {
 	background-color: transparent;
@@ -668,7 +673,8 @@ a .three-col-image {
 .three-col-item #civic-bg img,
 .three-col-item #pdop-bg img,
 .three-col-item #milkweed-bg img,
-.three-col-item #chidc-bg img  {
+.three-col-item #chidc-bg img,
+.three-col-item #cape-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
