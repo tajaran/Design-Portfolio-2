@@ -347,7 +347,7 @@ a .three-col-image img {
 
 /* CAPE - Bg Gradient (their own rebrand palette) */
 #cape-bg {
-	background: linear-gradient(135deg, #863785 0%, rgba(253, 233, 83, 0.25) 50%, #613594 100%);
+	background: linear-gradient(135deg, #863785 0%, rgba(253, 233, 83, 0.05) 50%, #613594 100%);
 }
 
 /* Blank Case Study - Bg Color */
