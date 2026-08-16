@@ -642,14 +642,16 @@ main {
 /* Home page grid: center a trailing partial row instead of spreading it edge-to-edge */
 #three-col-padding {
 	justify-content: center;
+	align-items: flex-start;
 	gap: 60px;
 }
 
 /* When a centered heading block leads off a #three-col-padding grid (e.g. a
    category header above a row of cards), avoid doubling its padding with the
-   grid's own top padding */
+   grid's own top padding, and keep it close to the card row below it */
 #three-col-padding > .content-child:first-child .content {
 	padding-top: 0;
+	padding-bottom: 16px;
 }
 
 /* 3rd Lvl Wrapper - Flex Items ----------*/
