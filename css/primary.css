@@ -654,6 +654,13 @@ main {
 	padding-bottom: 8px;
 }
 
+/* Chicago Defender Charities lands on the legacy row-rhythm nth-child(4)
+   selector (meant for the flat homepage grid) since the header block now
+   shifts every card's position by one; it doesn't apply here */
+#civic-first-section .three-col-item:nth-child(4) {
+	padding-top: 0;
+}
+
 /* Civic Tech landing page: extra breathing room between the hero and the
    first category section specifically (not between sections generally) */
 #civic-first-section {
