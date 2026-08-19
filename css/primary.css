@@ -745,8 +745,8 @@ a .three-col-image {
 /* Distance Calculation shares the shipment-bg color, but with the smaller
    legalaid-bg/cape-bg thumbnail treatment above */
 .three-col-item #shipment-bg img.thumb-small {
-	max-width: 250px;
-	width: 75%;
+	max-width: 215px;
+	width: 65%;
 }
 
 /* Icon image size */
