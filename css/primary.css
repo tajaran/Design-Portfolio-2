@@ -415,6 +415,14 @@ a .three-col-image img {
 	padding-top: 32px;
 }
 
+/* Distance Calculation Overview: no extra top padding on the second row,
+   the grid gap alone is enough */
+.flush-overview .three-col-item:nth-child(5),
+.flush-overview .three-col-item:nth-child(6),
+.flush-overview .three-col-item:nth-child(7) {
+	padding-top: 0;
+}
+
 /* Adding padding in-between content*/
 .content h4 {
 	padding-bottom: 16px;
