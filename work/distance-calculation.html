@@ -1,0 +1,485 @@
+<!-- Edited by Joseph Tajaran. I made this for my Design portfolio tajaran.design. Nice to meet you :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Distance Calculation - Case Study</title>
+	<meta name="author" content="Joseph Tajaran">
+	<meta name="robots" content="noindex, nofollow">
+
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="../favicon_32.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/primary.css">
+
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
+
+	<!-- Fancybox lightbox: http://fancyapps.com/fancybox/3/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="../fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<script src="../fancybox/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+	<div class="joseph">
+		<!-- BACK TO THE TOP ID -------------------->
+		<a id="top"></a>
+
+		<!-- NAV BAR -------------------->
+		<header>
+			<div class="nav-bar">
+				<nav>
+					<!-- Go Back -->
+					<div class="go-back">
+						<a href="../index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+					<!-- Navigation Menu -->
+					<ul class="header-menu">
+						<li><a href="../product-work.html">Product Work</a></li>
+						<li><a href="../civic-tech.html">Civic Tech</a></li>
+						<li><a href="../about.html">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- START MAIN GRID WRAPPER -------------------->
+		<main>
+			<div class="wrapper">
+				<!-- INTRO -------------------->
+				<section class="content-parent" id="bg-div">
+					<div class="content-child">
+						<div class="content" id="center-align">
+							<h4>Feature</h4>
+							<h1>Distance Calculation</h1>
+							<p id="intro-p">What looked like a simple ticket needed a dozen-plus undocumented validation states mapped out before it could ship.</p>
+						</div>
+					</div>
+					<!-- 01 - Updated pattern for our origin/destination collapsible containers. -->
+					<div class="content-img-container">
+						<div class="content-img" id="shipment-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/01-final-on-track.png">
+									<img src="../images/distance-calc/01-final-on-track.png" alt="Updated pattern for our origin/destination collapsible containers">
+								</a>
+							</div>
+						</div>
+						<figcaption>01 - Updated pattern for our origin/destination collapsible containers.</figcaption>
+					</div>
+				</section>
+
+				<!-- START OVERVIEW -------------------->
+				<section class="three-col-parent">
+					<div class="three-col-child" id="bottom-padding">
+						<!-- 3-Col Content -->
+						<div class="content-child">
+							<div class="content" id="center-align">
+								<h4>Overview</h4>
+								<h2>A dozen-plus validation states hidden behind a simple-looking ticket.</h2>
+							</div>
+						</div>
+
+						<!-- Company Profile -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/sdt-logo-icon.svg" alt="Couldn't use the Ascent logo so this is a proxy.">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>Company Profile</h3>
+								<p>Ascent leverages technology to improve the logistics process.</p>
+							</div>
+						</div>
+
+						<!-- The Problem -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Jigsaw_620550%201.svg" alt="Jigsaw icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Problem</h3>
+								<p>What appeared a simple ticket turned out to need a dozen-plus undocumented states before it could ship.</p>
+							</div>
+						</div>
+
+						<!-- The Outcome -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Check_2742243.svg" alt="Checkmark icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Outcome</h3>
+								<p>A fully documented interaction defining all validation states.</p>
+							</div>
+						</div>
+
+						<!-- My Role -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_User_608611.svg" alt="Person icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Role</h3>
+								<p>Product Designer</p>
+							</div>
+						</div>
+
+						<!-- My Team -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_work%20team_611117.svg" alt="Team icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Team</h3>
+								<p>1 PM, 1 BA, 2 Devs, plus stakeholders across two stand-ups.</p>
+							</div>
+						</div>
+
+						<!-- My Contribution -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Package_861442.svg" alt="Box icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Contribution</h3>
+								<p>State-mapping and visual documentation for the updated pattern.</p>
+							</div>
+						</div>
+					</div>
+				<!-- END OVERVIEW -------------------->
+				</section>
+
+				<hr>
+
+				<!-- SUMMARY -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Summary</h4>
+							<h2>Customer users use origin and destination to calculate costs.</h2>
+							<p>The Origin and Destination containers exist in our <a href="single-page-entry.html">shipment entry</a>. They define when an order is picked up at the distribution and dropped off accordingly to the customer's preferred destination location. When our product requests quotes from trucking vendors, there are a multitude of criteria that determines cost, and the distance is one of them.</p>
+						</div>
+					</div>
+					<!-- 02 - The Origin/Destination containers before the update. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/02-previous-container.png">
+									<img src="../images/distance-calc/02-previous-container.png" alt="The Origin/Destination containers before the update">
+								</a>
+							</div>
+						</div>
+						<figcaption>02 - The Origin/Destination containers before the update.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>Users prefer knowing the distance before they submit for a quote so they have an general idea of how much it would cost. We have solved for this solution in the past in the previous product when we offered multi-stop (multiple origins and destinations). The difference is that our UI structure presents information differently than the previous one so we couldn't simply copy and paste what we've done in the past.</p>
+						</div>
+					</div>
+					<!-- 03 - How we showed the distance between multiple stops in the previous iteration of this product. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/03-previous-iteration.png">
+									<img src="../images/distance-calc/03-previous-iteration.png" alt="How we showed the distance between multiple stops in the previous iteration of this product">
+								</a>
+							</div>
+						</div>
+						<figcaption>03 - How we showed the distance between multiple stops in the previous iteration of this product.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>On the surface it appeared that all this ticket needed was a UI representing the distance between Origin and Destination. What complicates this are the conditional and failure states that could occur when completing multiple form fields determine an output.</p>
+						</div>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- AI PRACTICE -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>AI Practice</h4>
+							<h2>At this point my AI practice was using Claude as a thinking partner that can automate tasks, but not generate designs.</h2>
+							<p>While I'm not against the idea of going straight into Claude Code or similar products that generate functional prototypes, I find that for tickets like these, and tickets in general, the general practice should be doing some kind of scrutinizing or interrogation.</p>
+							<p>For instance, this ask wasn't well defined yet and required some interrogation. While it fleshed out the mechanism for validation (e.g. the calculated road distance in miles or kilometers is displayed on the shipment entry screen for ground mode shipments), but didn't specify how it was done (which form fields trigger it). The practice of having an undefined ticket at all isn't new, and it isn't wrong. Sometimes teams need to work fast and we don't have all the details up front. What I think is important is that we always interrogate tickets to ensure we are building the right thing first. I believe this is what leads to faster output because we've talked through a thing at some length.</p>
+							<p>If you're curious to know more I do talk more about this in my Substack article, <a href="https://tajaran.substack.com">Prompting is Designing</a>.</p>
+						</div>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- DISCOVERY -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Discovery</h4>
+							<h2>The ticket started with an outcome, but didn't specify how to trigger it.</h2>
+							<p>During this period it became a habit for me to use Claude to reorganize or abstract information from the ticket if it was still in a raw state. In doing so I discovered a separate technical document created by one of our devs 3 months prior that defined the affected form fields and explained the underlying logic for the feature.</p>
+						</div>
+					</div>
+					<!-- 04 - Highlighted form fields (in red) that trigger the feature. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/04-relevant-form-field.png">
+									<img src="../images/distance-calc/04-relevant-form-field.png" alt="Highlighted form fields (in red) that trigger the feature">
+								</a>
+							</div>
+						</div>
+						<figcaption>04 - Highlighted form fields (in red) that trigger the feature.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>I used Claude to break down the technical phrasing and cross-referenced it against the ticket. From there I gathered my notes and set up a call with my team (PM and Devs) to understand the scope further. I would then cross references my notes to call and run the transcript through Claude to make sure I captured everything discussed.</p>
+						</div>
+					</div>
+					<!-- 05 - Screencap of me asking Claude to give me the high level of items we agreed upon during the call. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/05-transcript.png">
+									<img src="../images/distance-calc/05-transcript.png" alt="Screencap of me asking Claude to give me the high level of items we agreed upon during the call">
+								</a>
+							</div>
+						</div>
+						<figcaption>05 - Screencap of me asking Claude to give me the high level of items we agreed upon during the call.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>I'm unsure if I will do this for every project, but for this one I did use Claude to help me map out the diagram based on my understanding of the workflow so far.</p>
+						</div>
+					</div>
+					<!-- 06 - Screencaps where I was trying to define all the potential paths through Claude. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/distance-calc/06-a-potential-paths.png">
+										<img src="../images/distance-calc/06-a-potential-paths.png" alt="Screencap where I was trying to define all the potential paths through Claude">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/distance-calc/06-b-potential-paths.png">
+										<img src="../images/distance-calc/06-b-potential-paths.png" alt="Screencap where I was trying to define all the potential paths through Claude">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/distance-calc/06-c-potential-paths.png">
+										<img src="../images/distance-calc/06-c-potential-paths.png" alt="Screencap where I was trying to define all the potential paths through Claude">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>06 - Screencaps where I was trying to define all the potential paths through Claude.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>I would go back and forth with Claude to make sure the recommendation made sense, and eventually landed on a success/invalid state workflow which considered all the triggers going off during this feature.</p>
+						</div>
+					</div>
+					<!-- 07 - I had Claude give me all the workflows in markdown format so I could copy and paste into my documentation tool of choice Obsidian. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/07-workflows.png">
+									<img src="../images/distance-calc/07-workflows.png" alt="I had Claude give me all the workflows in markdown format so I could copy and paste into my documentation tool of choice Obsidian">
+								</a>
+							</div>
+						</div>
+						<figcaption>07 - I had Claude give me all the workflows in markdown format so I could copy and paste into my documentation tool of choice Obsidian.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- IDEATION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Ideation</h4>
+							<h2>My recommendation for this feature was leveraging the "Visibility of System Status" heuristic.</h2>
+							<p>Something that wasn't defined in the ticket was my recommendation to the team: if live data was being generated, we had to signal feedback as it happened. Hence, the output had a valid, invalid, and loading state. I believe if data is being processed, a user needs to know their input is being registered by the system. They need to know the system is working as intended, and the system should provide feedback accordingly.</p>
+							<p>One of the constraints was operating within the accordion container. How could we provide validation with such a long surface area? It was outside of scope to renegotiate the actual pattern itself, so we were limited to the current component.</p>
+							<p>A simple solution could be putting the validation message at the end. On paper this makes sense: a user completing this would operate linearly, going up to down. One of the problems with this is that the actual messaging would hide if you collapsed the container and we'd have to renegotiate space in the parent container if we wanted it to be visible. Additionally, since the surface area was long, a user could be completing fields and not know their output until the end. I think it's more advantageous if the data is live, to see it happening live within the same space.</p>
+						</div>
+					</div>
+					<!-- 08 - One of the solutions with the validation towards the end of the container. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/08-end-validation.png">
+									<img src="../images/distance-calc/08-end-validation.png" alt="One of the solutions with the validation towards the end of the container">
+								</a>
+							</div>
+						</div>
+						<figcaption>08 - One of the solutions with the validation towards the end of the container.</figcaption>
+					</div>
+
+					<!-- 09 - The indicator wouldn't work because it wouldn't be visible on some screens due to the length of the entire container. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/09-end-validation-screen-example.png">
+									<img src="../images/distance-calc/09-end-validation-screen-example.png" alt="The indicator wouldn't work because it wouldn't be visible on some screens due to the length of the entire container">
+								</a>
+							</div>
+						</div>
+						<figcaption>09 - The indicator wouldn't work because it wouldn't be visible on some screens due to the length of the entire container.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>Prior to this feature, the team made the decision to validate only after submission. Now, users will see their validation as they complete the required fields. I wanted to the signals contextual: both in the parent container (Locations) and the child ones (Origin and Destination). As the system does a pass for validation for correct input and validation for form field logic (e.g. your pick up time has to be before your delivery date), users can see their status and input as they are completing the form fields going up to down.</p>
+						</div>
+					</div>
+					<!-- 10 - Example of one of the at risk workflows for origin address which follows up with a timed disappearing toast at the end. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/10-at-risk-example.png">
+									<img src="../images/distance-calc/10-at-risk-example.png" alt="Example of one of the at risk workflows for origin address which follows up with a timed disappearing toast at the end">
+								</a>
+							</div>
+						</div>
+						<figcaption>10 - Example of one of the at risk workflows for origin address which follows up with a timed disappearing toast at the end.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- OUTCOME -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Outcome</h4>
+							<h2>I defined all the validation states both in the ticket and visually.</h2>
+							<p>In the deliverable I provided an expanded workflow that was not defined in the ticket, along with a visual of all the corresponding form fields per workflow.</p>
+						</div>
+					</div>
+					<!-- 11 - Screen cap of my comment in Jira, defining all the workflows and validation states. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/11-jira-comment.png">
+									<img src="../images/distance-calc/11-jira-comment.png" alt="Screen cap of my comment in Jira, defining all the workflows and validation states">
+								</a>
+							</div>
+						</div>
+						<figcaption>11 - Screen cap of my comment in Jira, defining all the workflows and validation states.</figcaption>
+					</div>
+
+					<!-- 12 - Color coded visual of each form field corresponding to the relevant signals they impact once a user completes an input. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/12-all-dependencies.png">
+									<img src="../images/distance-calc/12-all-dependencies.png" alt="Color coded visual of each form field corresponding to the relevant signals they impact once a user completes an input">
+								</a>
+							</div>
+						</div>
+						<figcaption>12 - Color coded visual of each form field corresponding to the relevant signals they impact once a user completes an input.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>The loading interaction and the timed toast were new/updated components that were documented in our design system. All the other inner components like the badges were already components in our design system. As a result of this feature, the collapsible pattern had a new variant with more validation states.</p>
+						</div>
+					</div>
+					<!-- 13 - What the pattern looked like before (left) and after this feature (right). -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/distance-calc/02-previous-container.png">
+										<img src="../images/distance-calc/02-previous-container.png" alt="The Origin/Destination containers before the update">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/distance-calc/01-final-on-track.png">
+										<img src="../images/distance-calc/01-final-on-track.png" alt="Updated pattern for our origin/destination collapsible containers">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>13 - What the pattern looked like before (left) and after this feature (right).</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>I also used Claude to write the tickets for our separate design system board so our front-end dev can update the pattern accordingly.</p>
+							<p>The ticket was assigned on a Tuesday and finished on a Thursday.</p>
+						</div>
+					</div>
+					<!-- 14 - Screenshot of me telling Claude to write the ticket in Jira. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/14-jira-ticket-for-ads.png">
+									<img src="../images/distance-calc/14-jira-ticket-for-ads.png" alt="Screenshot of me telling Claude to write the ticket in Jira">
+								</a>
+							</div>
+						</div>
+						<figcaption>14 - Screenshot of me telling Claude to write the ticket in Jira.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- REFLECTION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h4>Reflection</h4>
+							<h2>During this time I was still defining how to use AI to accelerate my workflow.</h2>
+							<p>Over the year of using AI, I've reached the same conclusion many others have: it's not infallible, and its output needs to be scrutinized. I can see a use for it in going straight to code, but I can't see it for problems like these, where the information up front is still undefined and needs further clarity.</p>
+							<p>Even before AI, for problems like these specifically, I wouldn't even start clicking and dragging in Figma. I have never found that as a good use of time. I believe the exercise of processing the ask first will always save you time in the long run, not just in the ideation phase. I get that there are designers out there (not naming names, and I'm not saying I'm absolved of this) that appear to be taking more time than it feels like it should to produce an artifact, an output. I believe it's always been the issue of not defining the problem well enough, the feedback loop, or the mechanisms for approval, any of which elongate this process.</p>
+							<p>Say for example I started just generating stuff in Figma. For some designers, I know that this is a method for processing information and figuring out the solution space. While I'm sure there are issues with my own process, I feel like starting in Figma still constrains your solution space to the UI. If we take time to abstract the ask then I don't have to keep going back and forth with a stakeholder on what validation trigger was missing. Or we don't discover missing workflows until development, at which point they require rework.</p>
+							<p>This is where I've found AI to be helpful: its feedback loop can provide clarity almost instantaneously. This includes things like breaking down technical jargon, fetching related files in the system not mentioned in the document, and using it to verify if what I'm designing maps back to the ask. In the past I would go to my diagramming tool to map how I would approach designing a workflow. These artifacts are helpful for me to process the solution space and help me work faster. The exercise of prompting Claude to summarize and validate my workflow is the same as diagramming shapes on a white board. The difference now is AI can identify edge cases or scenarios that I couldn't think of in the moment. Not that the output is always correct, but having the option to scrutinize ideas you haven't thought of yet is invaluable. This usually happened in meetings. Now that layer of scrutiny happens on my own before the next stakeholder call.</p>
+							<p>The time save for me was figuring out the validations ahead of time. That was maybe an hour or two of going back and forth in Claude. The actual design work didn't take long, and we had two feedback sessions before we concluded we were happy with where we landed.</p>
+						</div>
+					</div>
+					<!-- 15 - All the paths and potential validations. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/distance-calc/15-all-workflows.png">
+									<img src="../images/distance-calc/15-all-workflows.png" alt="All the paths and potential validations">
+								</a>
+							</div>
+						</div>
+						<figcaption>15 - All the paths and potential validations.</figcaption>
+					</div>
+				</section>
+				<!-- Go Back -->
+				<div class="go-back-container">
+					<div class="go-back">
+						<a href="../index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+				</div>
+		</main>
+
+		<!-- FOOTER -------------------->
+		<footer>
+			<div class="curve-container">
+				<a href="#top">
+					<div class="curve-parent">
+						<img src="../images/assets/curve-triangle.svg" alt="Click back to top">
+						<div class="centered">Back to Top</div>
+					</div>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
