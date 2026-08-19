@@ -676,10 +676,13 @@ main {
 	padding-bottom: 0;
 }
 
-/* Chicago Defender Charities lands on the legacy row-rhythm nth-child(4)
-   selector (meant for the flat homepage grid) since the header block now
-   shifts every card's position by one; it doesn't apply here */
-#civic-first-section .three-col-item:nth-child(4) {
+/* Cards land on the legacy row-rhythm nth-child(4)/(5)/(6) selectors (meant
+   for the flat homepage grid) since the header block now shifts every
+   card's position by one; doesn't apply here (Civic Tech's Chicago Defender
+   Charities card, Product Work's Distance Calculation and Activity Tracking) */
+#civic-first-section .three-col-item:nth-child(4),
+#civic-first-section .three-col-item:nth-child(5),
+#civic-first-section .three-col-item:nth-child(6) {
 	padding-top: 0;
 }
 
