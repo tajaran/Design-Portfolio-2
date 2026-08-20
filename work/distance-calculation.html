@@ -56,7 +56,7 @@
 						<div class="content" id="center-align">
 							<h4>Feature</h4>
 							<h1>Distance Calculation</h1>
-							<p id="intro-p">What looked like a simple ticket needed a dozen-plus undocumented validation states mapped out before it could ship.</p>
+							<p id="intro-p">Using AI to surface hidden validation states.</p>
 						</div>
 					</div>
 					<!-- 01 - Updated pattern for our origin/destination collapsible containers. -->
@@ -101,7 +101,7 @@
 							</div>
 							<div class="three-col-content" id="center-align">
 								<h3>The Problem</h3>
-								<p>What appeared a simple ticket turned out to need a dozen-plus undocumented states before it could ship.</p>
+								<p>What looked simple needed additional undocumented states before shipping.</p>
 							</div>
 						</div>
 
@@ -160,7 +160,7 @@
 						<div class="content">
 							<h4>Summary</h4>
 							<h2>Customer users use origin and destination to calculate costs.</h2>
-							<p>The Origin and Destination containers exist in our <a href="single-page-entry.html">shipment entry</a>. They define when an order is picked up at the distribution and dropped off accordingly to the customer's preferred destination location. When our product requests quotes from trucking vendors, there are a multitude of criteria that determines cost, and the distance is one of them.</p>
+							<p>The Origin and Destination containers exist in our <a href="single-page-entry.html">shipment entry</a>. They define when an order is picked up at distribution and dropped off accordingly to the customer's preferred destination location. When our product requests quotes from trucking vendors, there are a multitude of criteria that determines cost, and the distance is one of them.</p>
 						</div>
 					</div>
 					<!-- 02 - The Origin/Destination containers before the update. -->
@@ -194,7 +194,7 @@
 
 					<div class="content-child">
 						<div class="content">
-							<p>On the surface it appeared that all this ticket needed was a UI representing the distance between Origin and Destination. What complicates this are the conditional and failure states that could occur when completing multiple form fields determine an output.</p>
+							<p>On the surface it appeared that all this ticket needed was a UI representing the distance between Origin and Destination. What complicates this are the conditional and failure states that could occur when completing multiple form fields to determine an output.</p>
 						</div>
 					</div>
 				</section>
@@ -208,8 +208,8 @@
 							<h4>AI Practice</h4>
 							<h2>At this point my AI practice was using Claude as a thinking partner that can automate tasks, but not generate designs.</h2>
 							<p>While I'm not against the idea of going straight into Claude Code or similar products that generate functional prototypes, I find that for tickets like these, and tickets in general, the general practice should be doing some kind of scrutinizing or interrogation.</p>
-							<p>For instance, this ask wasn't well defined yet and required some interrogation. While it fleshed out the mechanism for validation (e.g. the calculated road distance in miles or kilometers is displayed on the shipment entry screen for ground mode shipments), but didn't specify how it was done (which form fields trigger it). The practice of having an undefined ticket at all isn't new, and it isn't wrong. Sometimes teams need to work fast and we don't have all the details up front. What I think is important is that we always interrogate tickets to ensure we are building the right thing first. I believe this is what leads to faster output because we've talked through a thing at some length.</p>
-							<p>If you're curious to know more I do talk more about this in my Substack article, <a href="https://tajaran.substack.com">Prompting is Designing</a>.</p>
+							<p>For instance, this ask wasn't well defined yet and required some interrogation. While it fleshed out the mechanism for validation (e.g. the calculated road distance in miles or kilometers is displayed on the shipment entry screen), but didn't specify how it was done (which form fields trigger it). The practice of having an undefined ticket at all isn't new, and it isn't wrong. Sometimes teams need to work fast and we don't have all the details up front. What I think is important is that we always interrogate tickets or the ask to ensure we are building the right thing first. I believe this is what leads to faster output because we've talked through a thing at some length.</p>
+							<p>If you're curious to know more I do talk more about this in my Substack article, <a href="https://tajaran.substack.com/p/prompting-is-designing">Prompting is Designing</a>.</p>
 						</div>
 					</div>
 				</section>
@@ -239,7 +239,7 @@
 
 					<div class="content-child">
 						<div class="content">
-							<p>I used Claude to break down the technical phrasing and cross-referenced it against the ticket. From there I gathered my notes and set up a call with my team (PM and Devs) to understand the scope further. I would then cross references my notes to call and run the transcript through Claude to make sure I captured everything discussed.</p>
+							<p>I used Claude to break down the technical phrasing and cross-referenced it against the ticket. From there I gathered my notes and set up a call with my team (PM and Devs) to understand the scope further. Then I would cross-reference my notes through the transcript to make sure I didn't miss anything.</p>
 						</div>
 					</div>
 					<!-- 05 - Screencap of me asking Claude to give me the high level of items we agreed upon during the call. -->
@@ -283,7 +283,8 @@
 
 					<div class="content-child">
 						<div class="content">
-							<p>I would go back and forth with Claude to make sure the recommendation made sense, and eventually landed on a success/invalid state workflow which considered all the triggers going off during this feature.</p>
+							<p>I would go back and forth with Claude to make sure the recommendation made sense, and eventually landed on a success/invalid state workflow which considered all the triggers going off during this feature. In addition to surfacing calculated distance (the miles between origin and destination), one of the examples I found that had multiple conditional states were completing the address group (Country, Address, State, City, Zip Code). Completing these required fields should communicate two signifiers (origin and destination addresses) and on the backend trigger geocoding. Geocoding could sometimes fail, hence there needed to be an invalid state that allowed the user to continue, but the system should communicate this to them. Conversely, if a user inputted a distance that wasn't realistic, we could not prevent them from continuing, we simply needed to communicate that the distance wasn't feasible ("at risk").</p>
+							<p>As you can imagine, from what started as one state (show distance), evolved until multiple contingent states that depended on: if the data was required, if the data was valid, if the backend could ingest the data to give it a calculation.</p>
 						</div>
 					</div>
 					<!-- 07 - I had Claude give me all the workflows in markdown format so I could copy and paste into my documentation tool of choice Obsidian. -->
