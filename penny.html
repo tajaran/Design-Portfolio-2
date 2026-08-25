@@ -30,16 +30,13 @@
 
 		.penny-jump {
 			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 			gap: 8px;
-			overflow-x: auto;
 			max-width: 650px;
 			width: 100%;
 			margin: 0 auto 16px auto;
-			padding-bottom: 4px;
-			-ms-overflow-style: none;
-			scrollbar-width: none;
 		}
-		.penny-jump::-webkit-scrollbar { display: none; }
 		.penny-jump a {
 			flex: 0 0 auto;
 			font-size: 14px;
@@ -134,18 +131,6 @@
 	<div class="joseph">
 		<!-- BACK TO THE TOP ID -------------------->
 		<a id="top"></a>
-
-		<!-- NAV BAR -------------------->
-		<header>
-			<div class="nav-bar">
-				<nav>
-					<!-- Go Back -->
-					<div class="go-back">
-						<a href="index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
-					</div>
-				</nav>
-			</div>
-		</header>
 
 		<!-- START MAIN GRID WRAPPER -------------------->
 		<main>
