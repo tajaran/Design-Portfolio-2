@@ -1,0 +1,270 @@
+<!-- Edited by Joseph Tajaran. House sitting guide for Penny & Scout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<title>Penny &amp; Scout - House Sitting Guide</title>
+	<meta name="author" content="Joseph Tajaran">
+
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="favicon_32.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/primary.css">
+
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
+
+	<!-- Page-specific styles for /penny only. Reuses primary.css tokens:
+	     text #111111, muted rgba(0,0,0,0.6), accent #0290EE, hairline rgba(0,0,0,0.1) -->
+	<style>
+		.penny-logo {
+			display: block;
+			width: 96px;
+			height: 96px;
+			margin: 0 auto 16px auto;
+		}
+
+		.penny-jump {
+			display: flex;
+			gap: 8px;
+			overflow-x: auto;
+			max-width: 650px;
+			width: 100%;
+			margin: 0 auto 16px auto;
+			padding-bottom: 4px;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+		.penny-jump::-webkit-scrollbar { display: none; }
+		.penny-jump a {
+			flex: 0 0 auto;
+			font-size: 14px;
+			font-weight: bold;
+			color: #0290EE;
+			border: 1px solid rgba(2,144,238,0.35);
+			border-radius: 999px;
+			padding: 6px 14px;
+			white-space: nowrap;
+		}
+
+		.content h3 {
+			padding-top: 40px;
+			scroll-margin-top: 24px;
+		}
+		.content h3:first-of-type { padding-top: 0; }
+
+		.content h5.penny-sub {
+			padding-top: 16px;
+			padding-bottom: 4px;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			font-size: 14px;
+			color: rgba(0,0,0,0.6);
+		}
+
+		.penny-wifi code {
+			font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+			background: rgba(0,0,0,0.06);
+			padding: 2px 6px;
+			border-radius: 4px;
+			font-size: 16px;
+		}
+
+		.schedule-wrap {
+			overflow-x: auto;
+			margin-top: 8px;
+		}
+		table.schedule {
+			width: 100%;
+			border-collapse: collapse;
+			font-family: Inter, arial, sans-serif;
+		}
+		table.schedule th,
+		table.schedule td {
+			padding: 10px 8px;
+			text-align: center;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			font-variant-numeric: tabular-nums;
+		}
+		table.schedule th {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			color: rgba(0,0,0,0.6);
+		}
+		table.schedule td:first-child,
+		table.schedule th:first-child {
+			text-align: left;
+			font-weight: bold;
+		}
+		table.schedule .yes { color: #0290EE; font-weight: bold; }
+		table.schedule .no { color: rgba(0,0,0,0.3); }
+
+		.vet-callout {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			margin-top: 24px;
+			padding: 16px 20px;
+			background: #0290EE;
+			border-radius: 8px;
+			color: #FFFFFF !important;
+		}
+		.vet-callout:hover { text-decoration: none !important; }
+		.vet-callout .vet-name {
+			font-family: Metropolis, arial, sans-serif;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.vet-callout .vet-num {
+			font-family: Inter, arial, sans-serif;
+			font-weight: bold;
+			font-size: 16px;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="joseph">
+		<!-- BACK TO THE TOP ID -------------------->
+		<a id="top"></a>
+
+		<!-- NAV BAR -------------------->
+		<header>
+			<div class="nav-bar">
+				<nav>
+					<!-- Go Back -->
+					<div class="go-back">
+						<a href="index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- START MAIN GRID WRAPPER -------------------->
+		<main>
+			<div class="wrapper">
+
+				<!-- INTRO -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content" id="center-align">
+							<img src="images/penny/penny-logo.png" alt="Penny sitting buddy logo" class="penny-logo">
+							<h4>House Sitting Guide</h4>
+							<h1>Thanks again for house sitting for us!</h1>
+							<p id="intro-p">Everything you need for Penny &amp; Scout while we're away.</p>
+						</div>
+
+						<nav class="penny-jump" aria-label="Jump to section">
+							<a href="#general">General</a>
+							<a href="#routine">Routine</a>
+							<a href="#schedule">Schedule</a>
+							<a href="#penny-food">Penny</a>
+							<a href="#scout-food">Scout</a>
+							<a href="#lookout">Emergency</a>
+						</nav>
+					</div>
+				</section>
+
+				<!-- GUIDE CONTENT -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content" id="body">
+
+							<h3 id="general">General</h3>
+							<ul class="penny-wifi">
+								<li><strong>Wifi:</strong> Talaga &mdash; password <code>gudgurlp3nny666</code></li>
+								<li>There's a vacuum in the laundry room and cleaning stuff underneath the kitchen sink.</li>
+								<li>Take out the trash Monday evening &mdash; put the trash and recycling bins on the curb and we'll bring them back in when we're home.</li>
+							</ul>
+
+							<h3 id="routine">Routine</h3>
+							<ul>
+								<li>Twice a day, feed Penny (dog) and Scout (the outside cat) &mdash; morning and afternoon.</li>
+								<li>At least once in the morning, walk Penny to the park across the street (next to the church). We usually take a lap around the block and head back to the house.</li>
+								<li>If it's too hot to walk her in the afternoon, just let her outside for a little bit until she does her business &mdash; she usually motions when she's ready to go back in.</li>
+							</ul>
+
+							<h3 id="schedule">Days &amp; Times</h3>
+							<div class="schedule-wrap">
+								<table class="schedule">
+									<thead>
+										<tr><th>Day</th><th>Morning<br>6:30&ndash;8am</th><th>Afternoon<br>3&ndash;6pm</th></tr>
+									</thead>
+									<tbody>
+										<tr><td>Thu</td><td class="no">&mdash;</td><td class="yes">&check;</td></tr>
+										<tr><td>Fri</td><td class="yes">&check;</td><td class="yes">&check;</td></tr>
+										<tr><td>Sat</td><td class="yes">&check;</td><td class="yes">&check;</td></tr>
+										<tr><td>Sun</td><td class="yes">&check;</td><td class="yes">&check;</td></tr>
+										<tr><td>Mon</td><td class="yes">&check;</td><td class="yes">&check;</td></tr>
+										<tr><td>Tue</td><td class="yes">&check;</td><td class="no">&mdash;</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<p>If we're running late we'll text you. We should be back around <strong>Tuesday, 11am</strong>.</p>
+
+							<h3 id="penny-food">Penny's Food &amp; Treats</h3>
+							<h5 class="penny-sub">Morning</h5>
+							<ul>
+								<li>Feed her 1 ziploc bag of chicken and rice, and open her probiotic capsule and spread it on top of the food.</li>
+								<li>When you come back inside, give her 1 joint med (Cosequin).</li>
+							</ul>
+							<h5 class="penny-sub">Afternoon</h5>
+							<ul>
+								<li>Feed her 1 ziploc bag of chicken and rice.</li>
+								<li>Wash both bowls and refill her water bowl.</li>
+							</ul>
+							<h5 class="penny-sub">Treats</h5>
+							<ul>
+								<li>You can give her up to half a cup of chicken once a day. Put pieces in her toys, or use it to get her to listen to you.</li>
+							</ul>
+
+							<h3 id="scout-food">Scout's Food</h3>
+							<h5 class="penny-sub">Morning</h5>
+							<ul>
+								<li>Half a can of cat food &mdash; put the other half in a glass container in the fridge. She's usually in the front of the house in the morning.</li>
+								<li>Wash her water bowl and refill it.</li>
+							</ul>
+							<h5 class="penny-sub">Afternoon</h5>
+							<ul>
+								<li>Put out the other half of the cat food from the glass container. She's sometimes in the back of the house in the afternoon.</li>
+								<li>If she's not there either in the morning or afternoon, just leave the food outside &mdash; she'll eat it eventually.</li>
+							</ul>
+
+							<h3 id="lookout">Things to look out for</h3>
+							<ul>
+								<li>My father-in-law will come by Sunday to water the plants &mdash; he knows you'll be there.</li>
+								<li>Our vet is Kern Place Veterinary Hospital. They know we're out of town and could see Penny or Scout if something comes up.</li>
+							</ul>
+							<a class="vet-callout" href="tel:19155844491">
+								<span class="vet-name"><i class="fas fa-phone"></i>&nbsp; Kern Place Veterinary Hospital</span>
+								<span class="vet-num">915-584-4491</span>
+							</a>
+
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</main>
+
+		<!-- FOOTER -------------------->
+		<footer>
+			<div class="curve-container">
+				<a href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+					<div class="curve-parent">
+						<img src="images/assets/curve-triangle.svg" alt="Click back to top">
+						<div class="centered">Back to Top</div>
+					</div>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
