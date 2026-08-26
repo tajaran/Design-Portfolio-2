@@ -267,11 +267,11 @@ footer ul a {
 }
 
 .logo:hover {
-	transform: scale(0.95);
+	opacity: 0.6;
 }
 
 .logo:active {
-	opacity: 0.6;
+	transform: scale(0.95);
 }
 
 /* Long logo in the header */
@@ -832,8 +832,27 @@ div .three-col-image img.overview-icon-logo {
 
 /* Activate image hover */
 a:hover .three-col-image img {
+	opacity: 0.6;
+}
+
+/* Scales card thumbnails on press, matching the logo/footer icon convention */
+a:active .three-col-image img {
 	-webkit-transform: scale(.95);
 	transform: scale(.95);
+}
+
+/* Clickable in-content images (fancybox lightbox links): dim on hover,
+   scale on press, same convention as the rest of the site */
+a[data-fancybox] img {
+	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+a[data-fancybox]:hover img {
+	opacity: 0.6;
+}
+
+a[data-fancybox]:active img {
+	transform: scale(0.95);
 }
 
 /* Activate underline h3 hover */
@@ -955,12 +974,12 @@ footer {
 
 .footer-social a:hover img,
 .footer-social button:hover img {
-	transform: scale(0.95);
+	opacity: 0.6;
 }
 
 .footer-social a:active img,
 .footer-social button:active img {
-	opacity: 0.6;
+	transform: scale(0.95);
 }
 
 .footer-copy-toast {
@@ -1047,18 +1066,58 @@ footer h5 {
 	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 }
 
-/* Back to Top nudges upward on hover, dims on press */
+/* Back to Top nudges down slightly on hover, staying anchored to the
+   bottom of the viewport rather than shifting position */
 .curve-container a:hover .curve-parent {
-	transform: translateY(-6px);
-}
-
-.curve-container a:active .curve-parent {
-	opacity: 0.6;
+	transform: translateY(4px);
 }
 
 .curve-parent img {
 	max-width: 394px;
 	width: 100%;
+}
+
+/* CSS-only replacement for curve-triangle.svg: a triangle with a rounded
+   tip, built from a rotated square clipped to its top point, then
+   vertically compressed to match the original's wide, flat proportions
+   (394x53). Fixed pixel sizing for now, not yet fluid below ~442px
+   viewports. Used on all case study pages; penny.html still uses the
+   original SVG intentionally. */
+.back-to-top-shape {
+	position: relative;
+	width: 394px;
+	height: 53px;
+	overflow: hidden;
+}
+
+.back-to-top-shape-point {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 394px;
+	height: 197px;
+	transform: scaleY(0.269);
+	transform-origin: top;
+}
+
+.back-to-top-shape-point::before {
+	content: "";
+	position: absolute;
+	top: 197px;
+	left: 197px;
+	width: 279px;
+	height: 279px;
+	background-color: #111111;
+	border-radius: 56px 0 0 0;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.curve-container a:hover .back-to-top-shape-point::before {
+	background-color: #0273BE;
+}
+
+.curve-container a:active .back-to-top-shape-point::before {
+	background-color: #004E82;
 }
 
 /* .curve-parent > .centered */
