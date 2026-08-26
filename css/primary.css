@@ -317,7 +317,7 @@ a .three-col-image img {
 
 /* Shipment Widget - Bg Color */
 #shipment-bg {
-	background-color: #017D93;
+	background-color: #041F41;
 }
 
 /* Civic Tech - Bg Color (kept for potential future use; not currently applied to any page) */
@@ -568,16 +568,19 @@ main {
 	margin: 0 32px;
 }
 
-/* Vertically stacked image pairs (one image above another in the same container) */
+/* Paired images: side by side above the 620px breakpoint, stacked vertically below it */
 .content-img-stack {
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: center;
+	gap: 32px;
 	width: 100%;
 }
 
 .content-img-child-stack {
-	margin: 16px 0;
+	flex: 1 1 0;
+	min-width: 0;
 }
 
 /* Side-by-side breakpoint crops (e.g. mobile/tablet/desktop hero trio) */
@@ -1207,6 +1210,11 @@ footer h5 {
 
 	.content-img-child {
 		margin: 0 16px;
+	}
+
+	.content-img-stack {
+		flex-flow: column nowrap;
+		gap: 16px;
 	}
 
 	.hero-img-container {

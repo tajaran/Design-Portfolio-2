@@ -1,0 +1,380 @@
+<!-- Edited by Joseph Tajaran. I made this for my Design portfolio tajaran.design. Nice to meet you :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scroll-to-Hide Navigation - Case Study</title>
+	<meta name="author" content="Joseph Tajaran">
+	<meta name="robots" content="noindex, nofollow">
+
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="../favicon_32.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/primary.css">
+
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
+
+	<!-- Fancybox lightbox: http://fancyapps.com/fancybox/3/ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href="../fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<script src="../fancybox/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+	<div class="joseph">
+		<!-- BACK TO THE TOP ID -------------------->
+		<a id="top"></a>
+
+		<!-- NAV BAR -------------------->
+		<header>
+			<div class="nav-bar">
+				<nav>
+					<!-- Go Back -->
+					<div class="go-back">
+						<a href="../index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+					<!-- Navigation Menu -->
+					<ul class="header-menu">
+						<li><a href="../product-work.html">Product Work</a></li>
+						<li><a href="../civic-tech.html">Civic Tech</a></li>
+						<li><a href="../about.html">About</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- START MAIN GRID WRAPPER -------------------->
+		<main>
+			<div class="wrapper">
+				<!-- INTRO -------------------->
+				<section class="content-parent" id="bg-div">
+					<div class="content-child">
+						<div class="content" id="center-align">
+							<h4>Enhancement</h4>
+							<h1>Scroll-to-Hide Navigation</h1>
+							<p id="intro-p">Catching design debt before it became a bigger problem.</p>
+						</div>
+					</div>
+					<!-- 01 - The mobile shipment entry form with the new nested side navigation. -->
+					<div class="content-img-container">
+						<div class="content-img" id="shipment-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/01-final-shipment-entry-a.png">
+										<img src="../images/scroll-to-hide/01-final-shipment-entry-a.png" alt="New Shipment form on mobile with the full navigation bar visible at the top of the page">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/01-final-shipment-entry-b.png">
+										<img src="../images/scroll-to-hide/01-final-shipment-entry-b.png" alt="The same form scrolled further down, with the navigation bar hidden and only the nested side navigation button remaining">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>01 - The mobile shipment entry form with the new nested side navigation.</figcaption>
+					</div>
+				</section>
+
+				<!-- START OVERVIEW -------------------->
+				<section class="three-col-parent">
+					<div class="three-col-child flush-overview" id="bottom-padding">
+						<!-- 3-Col Content -->
+						<div class="content-child">
+							<div class="content" id="center-align">
+								<h4>Overview</h4>
+								<h2>Small, reasonable sticky decisions compounded into one shrinking form.</h2>
+							</div>
+						</div>
+
+						<!-- Company Profile -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/sdt-logo-icon.svg" alt="Couldn't use the Ascent logo so this is a proxy.">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>Company Profile</h3>
+								<p>Ascent leverages technology to improve the logistics process.</p>
+							</div>
+						</div>
+
+						<!-- The Problem -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Jigsaw_620550%201.svg" alt="Jigsaw icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Problem</h3>
+								<p>Our product accumulated "design debt" that could inhibit the overall experience.</p>
+							</div>
+						</div>
+
+						<!-- The Outcome -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Check_2742243.svg" alt="Checkmark icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>The Outcome</h3>
+								<p>Defined interaction patterns that gave the form its space back.</p>
+							</div>
+						</div>
+
+						<!-- My Role -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_User_608611.svg" alt="Person icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Role</h3>
+								<p>Product Designer</p>
+							</div>
+						</div>
+
+						<!-- My Team -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_work%20team_611117.svg" alt="Team icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Team</h3>
+								<p>1 BA, 1 Dev, 1 QA</p>
+							</div>
+						</div>
+
+						<!-- My Contribution -->
+						<div class="three-col-item">
+							<div class="three-col-image">
+								<img src="../icons/noun_Package_861442.svg" alt="Box icon">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h3>My Contribution</h3>
+								<p>Identified the issue, proposed the ticket, and designed the resulting navigation patterns that became standard in the design system.</p>
+							</div>
+						</div>
+					</div>
+				<!-- END OVERVIEW -------------------->
+				</section>
+
+				<hr>
+
+				<!-- OBSERVATION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h1>Observation</h1>
+							<h2>Over time, our individual decisions to make various navigation patterns sticky caught up with us.</h2>
+							<p>In one of our weekly sessions with our internal pilot users, I noticed the amount of screen real estate they had available when completing the <a href="single-page-entry.html">shipment entry form</a>.</p>
+							<p>We noticed that this group would reduce the width of the window when sharing their screen (which is consistent with how other agents have used the product in the past). Since we'd previously made the horizontal navbar, route, and creation patterns all sticky, the space left for the form itself shrank. Fields you'd already completed higher up the page were covered by the stacked sticky elements, so you lost visibility into your own progress.</p>
+						</div>
+					</div>
+
+					<!-- 02 - All the navigation patterns stickied onto the screen while a user scrolled down to complete the shipment entry form. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/scroll-to-hide/02-prior-behavior.png">
+									<img src="../images/scroll-to-hide/02-prior-behavior.png" alt="Every sticky navigation element highlighted at once: the top navbar, the route stepper, and the bottom action bar, all stacked while a user scrolls through the shipment entry form" loading="lazy">
+								</a>
+							</div>
+						</div>
+						<figcaption>02 - All the navigation patterns stickied onto the screen while a user scrolled down to complete the shipment entry form.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- EXPLORATION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h1>Exploration</h1>
+							<h2>During a lull, I proposed a ticket to resolve this issue for all screen sizes.</h2>
+							<p>This issue was already annoying on desktop, and after testing it some more myself, I determined that it would be even worse on mobile. Since the horizontal navbar was a means to exit a task and didn't help with completing the shipment entry form, it should hide and only be visible when a user needs it. I chose a ubiquitous pattern found in editorial content: hide the navbar when scrolling down and have it show up when a user scrolls up. It was direction-based. I liked this solution because usually our users completed forms going up to down and if they are going up then they are likely correcting something. Using this behavior I proposed we figure out the logic for how long the navbar should remain visible.</p>
+						</div>
+					</div>
+
+					<!-- 03 - Example of how much screen real estate we get back if we simply hide the horizontal navbar. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/03-current-state.png">
+										<img src="../images/scroll-to-hide/03-current-state.png" alt="The current state, with both the navbar and stepper sticky, leaving less room for the form" loading="lazy">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/03-proposed-state.png">
+										<img src="../images/scroll-to-hide/03-proposed-state.png" alt="The proposed state, with only the stepper sticky, giving the form noticeably more room" loading="lazy">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>03 - Example of how much screen real estate we get back if we simply hide the horizontal navbar.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>To be honest, I don't do a lot of interaction design nowadays, and this was something I hadn't specifically thought about. I used Claude to find out what's common out there for this kind of interaction, and had it show me live examples so I could see for myself how the timing actually felt. Afterwards I would test out the interaction myself on Figma to see how it rendered.</p>
+						</div>
+					</div>
+
+					<!-- 04 - Some documentation I shared with the team via Jira on some of the behavior examples I was looking at. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-child">
+								<a data-fancybox="gallery" href="../images/scroll-to-hide/04-documentation-example.png">
+									<img src="../images/scroll-to-hide/04-documentation-example.png" alt="Documentation comparing scroll-to-hide trigger behavior and animation duration across common implementations like Headroom.js, Material 3, and iOS Safari" loading="lazy">
+								</a>
+							</div>
+						</div>
+						<figcaption>04 - Some documentation I shared with the team via Jira on some of the behavior examples I was looking at.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- RESOLUTION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h1>Resolution</h1>
+							<h2>Solving this for one screen created work that needed solving everywhere.</h2>
+							<p>I felt like if we established this treatment for one screen, we should examine whether it made sense across all of them. Hence, I looked at how this behavior may affect other screens in our system. I did this for all screen sizes. I'm glad I did this examination because for screens where we only use what's in the viewport height (no scrolling, usually a table), this behavior wasn't necessary. It was only necessary for screens that scrolled, and this did apply to table screens once they were reduced to mobile size. Since the table automatically converts to cards on mobile, the page begins to scroll.</p>
+						</div>
+					</div>
+
+					<!-- 05 - Example of the scrolling behavior of the same screen but in different screen sizes. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/05-desktop-shipment-list.png">
+										<img src="../images/scroll-to-hide/05-desktop-shipment-list.png" alt="The shipment list as a table on desktop, where everything fits within the viewport height" loading="lazy">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/05-mobile-shipment-list.png">
+										<img src="../images/scroll-to-hide/05-mobile-shipment-list.png" alt="The same shipment list converted to cards on mobile, where the page now scrolls" loading="lazy">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>05 - Example of the scrolling behavior of the same screen but in different screen sizes.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>Additionally, I took this as an opportunity to solve a related space problem: the side navigation. On mobile, we'd previously reformatted the anchor side navigation into a horizontal stepper for the shipment entry form, where it doubled as a sequence indicator.</p>
+						</div>
+					</div>
+
+					<!-- 06 - The side navigation shown in mobile and desktop. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/06-desktop-side-nav.png">
+										<img src="../images/scroll-to-hide/06-desktop-side-nav.png" alt="The side navigation on desktop, a flyout panel listing every section of the shipment entry form" loading="lazy">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/06-mobile-side-nav.png">
+										<img src="../images/scroll-to-hide/06-mobile-side-nav.png" alt="The side navigation on mobile, reformatted into a horizontal stepper that also indicates progress" loading="lazy">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>06 - The side navigation shown in mobile and desktop.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>But on the shipment detail page, that same treatment created confusion: the page already used a stepper to show shipment status (Pickup, In Transit, Delivered), and a second, similar-looking stepper for page sections read as a duplicate of the same pattern with a different meaning. So on shipment detail, we'd instead hidden the side navigation on mobile entirely. You'll notice that these two artifacts don't look the same.</p>
+						</div>
+					</div>
+
+					<!-- 07 - The side navigation shown differently on shipment entry (as a stepper) versus shipment detail (hidden) on mobile. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/07-shipment-page.png">
+										<img src="../images/scroll-to-hide/07-shipment-page.png" alt="The mobile shipment detail page, where the side navigation was hidden entirely to avoid confusion with the shipment status stepper" loading="lazy">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/06-mobile-side-nav.png">
+										<img src="../images/scroll-to-hide/06-mobile-side-nav.png" alt="The mobile shipment entry page, where the side navigation instead doubled as a horizontal stepper" loading="lazy">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>07 - The side navigation shown differently on shipment entry (as a stepper) versus shipment detail (hidden) on mobile.</figcaption>
+					</div>
+
+					<div class="content-child">
+						<div class="content">
+							<p>I had conceived a solution where we can still have that interaction pattern without creating the stepper confusion or losing the navigation entirely. I proposed we could nest the interaction in a button, letting users jump to any part of the page instead of only the sections the mobile stepper had room to show. Since jumping between sections meant editing (since most form fields were completed linearly), this made sense to have the button sticky to the header.</p>
+						</div>
+					</div>
+
+					<!-- 08 - Side navigation button shown in the shipment entry and shipment detail pages. -->
+					<div class="content-img-container" id="bg-div">
+						<div class="content-img" id="alt-bg">
+							<div class="content-img-stack">
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/08-desktop-shipment-detail.png">
+										<img src="../images/scroll-to-hide/08-desktop-shipment-detail.png" alt="The Sections panel open on the shipment detail page on desktop, listing the same jump-to-section links docked to the header" loading="lazy">
+									</a>
+								</div>
+								<div class="content-img-child-stack">
+									<a data-fancybox="gallery" href="../images/scroll-to-hide/08-mobile-shipment-detail.png">
+										<img src="../images/scroll-to-hide/08-mobile-shipment-detail.png" alt="The Sections button open on the shipment detail page on mobile, letting a user jump directly to any part of the page" loading="lazy">
+									</a>
+								</div>
+							</div>
+						</div>
+						<figcaption>08 - Side navigation button shown in the shipment entry and shipment detail pages.</figcaption>
+					</div>
+				</section>
+
+				<hr>
+
+				<!-- OUTCOME & REFLECTION -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content">
+							<h1>Outcome &amp; Reflection</h1>
+							<h2>We updated all screens with the new scroll-to-hide interaction.</h2>
+							<p>While the scope of it seemed small, I believe these types of small interactions reduce those micro frustrations users experience on a product. It also established a new behavior for how we treat our long scrolling screens going forward, and the side navigation button became the new standard for how users navigate a long page on mobile.</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Go Back -->
+				<div class="go-back-container">
+					<div class="go-back">
+						<a href="../index.html" onclick="if (window.history.length > 1) { event.preventDefault(); window.history.back(); }"><i class="fas fa-long-arrow-alt-left"></i>&nbsp;Go back</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- FOOTER -------------------->
+		<footer>
+			<div class="curve-container">
+				<a href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+					<div class="curve-parent">
+						<img src="../images/assets/curve-triangle.svg" alt="Click back to top">
+						<div class="centered">Back to Top</div>
+					</div>
+				</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
