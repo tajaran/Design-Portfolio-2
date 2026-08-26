@@ -15,6 +15,28 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="../css/primary.css">
 
+	<!-- Page-specific: side-by-side pairing for figures 01, 03, and 07 only.
+	     content-img-stack elsewhere on the site (and other pairs on this page)
+	     stays the default always-vertical stack. -->
+	<style>
+		.content-img-stack.pair-row {
+			flex-flow: row nowrap;
+			justify-content: center;
+			gap: 32px;
+		}
+		.content-img-stack.pair-row .content-img-child-stack {
+			flex: 1 1 0;
+			min-width: 0;
+			margin: 0;
+		}
+		@media screen and (max-width: 620px) {
+			.content-img-stack.pair-row {
+				flex-flow: column nowrap;
+				gap: 16px;
+			}
+		}
+	</style>
+
 	<!-- Font Awesome CDN -->
 	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
 
@@ -62,7 +84,7 @@
 					<!-- 01 - The mobile shipment entry form with the new nested side navigation. -->
 					<div class="content-img-container">
 						<div class="content-img" id="shipment-bg">
-							<div class="content-img-stack">
+							<div class="content-img-stack pair-row">
 								<div class="content-img-child-stack">
 									<a data-fancybox="gallery" href="../images/scroll-to-hide/01-final-shipment-entry-a.png">
 										<img src="../images/scroll-to-hide/01-final-shipment-entry-a.png" alt="New Shipment form on mobile with the full navigation bar visible at the top of the page">
@@ -200,7 +222,7 @@
 					<!-- 03 - Example of how much screen real estate we get back if we simply hide the horizontal navbar. -->
 					<div class="content-img-container" id="bg-div">
 						<div class="content-img" id="alt-bg">
-							<div class="content-img-stack">
+							<div class="content-img-stack pair-row">
 								<div class="content-img-child-stack">
 									<a data-fancybox="gallery" href="../images/scroll-to-hide/03-current-state.png">
 										<img src="../images/scroll-to-hide/03-current-state.png" alt="The current state, with both the navbar and stepper sticky, leaving less room for the form" loading="lazy">
@@ -300,7 +322,7 @@
 					<!-- 07 - The side navigation shown differently on shipment entry (as a stepper) versus shipment detail (hidden) on mobile. -->
 					<div class="content-img-container" id="bg-div">
 						<div class="content-img" id="alt-bg">
-							<div class="content-img-stack">
+							<div class="content-img-stack pair-row">
 								<div class="content-img-child-stack">
 									<a data-fancybox="gallery" href="../images/scroll-to-hide/07-shipment-page.png">
 										<img src="../images/scroll-to-hide/07-shipment-page.png" alt="The mobile shipment detail page, where the side navigation was hidden entirely to avoid confusion with the shipment status stepper" loading="lazy">
