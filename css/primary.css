@@ -267,11 +267,11 @@ footer ul a {
 }
 
 .logo:hover {
-	opacity: 0.6;
+	transform: scale(0.95);
 }
 
 .logo:active {
-	transform: scale(0.95);
+	opacity: 0.6;
 }
 
 /* Long logo in the header */
@@ -955,12 +955,12 @@ footer {
 
 .footer-social a:hover img,
 .footer-social button:hover img {
-	opacity: 0.6;
+	transform: scale(0.95);
 }
 
 .footer-social a:active img,
 .footer-social button:active img {
-	transform: scale(0.95);
+	opacity: 0.6;
 }
 
 .footer-copy-toast {
@@ -1044,6 +1044,16 @@ footer h5 {
 	justify-content: flex-end;
 	width: auto;
 	position: relative;
+	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+/* Back to Top nudges upward on hover, dims on press */
+.curve-container a:hover .curve-parent {
+	transform: translateY(-6px);
+}
+
+.curve-container a:active .curve-parent {
+	opacity: 0.6;
 }
 
 .curve-parent img {
