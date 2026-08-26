@@ -684,6 +684,12 @@ main {
 	padding-bottom: 0;
 }
 
+/* Category header blocks (e.g. "Research-Led Design", "Brand & Content"):
+   match the muted #intro-p treatment instead of default paragraph black */
+#three-col-padding > .content-child:first-child .content p {
+	color: rgb(0, 0, 0, 0.6);
+}
+
 /* Cards land on the legacy row-rhythm nth-child(4)/(5)/(6) selectors (meant
    for the flat homepage grid) since the header block now shifts every
    card's position by one; doesn't apply here (Civic Tech's Chicago Defender
