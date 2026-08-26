@@ -209,19 +209,55 @@
 		<!-- FOOTER -------------------->
 		<footer class="copyright-container">
 			<script type="text/javascript">
-				function decode(a) {
-				return a.replace(/[a-zA-Z]/g, function(c){
-				return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
-				})
-				}; 
-				function openMailer(element) {
-				var y = decode("znvygb:orahgmre@qbznva.qr");
-				element.setAttribute("href", y);
-				element.setAttribute("onclick", "");
-				element.firstChild.nodeValue = "Open email software";
+				function copyEmail(button) {
+				var toast = button.querySelector(".footer-copy-toast");
+				var email = "joseph@tajaran.com";
+				var showToast = function (text, duration) {
+					toast.textContent = text;
+					toast.classList.add("visible");
+					clearTimeout(toast._hideTimer);
+					toast._hideTimer = setTimeout(function () {
+						toast.classList.remove("visible");
+					}, duration);
+				};
+				var fallback = function () {
+					showToast(email, 6000);
+				};
+				if (navigator.clipboard && navigator.clipboard.writeText) {
+					var settled = false;
+					var giveUp = setTimeout(function () {
+						if (settled) { return; }
+						settled = true;
+						fallback();
+					}, 1500);
+					navigator.clipboard.writeText(email).then(function () {
+						if (settled) { return; }
+						settled = true;
+						clearTimeout(giveUp);
+						showToast("Email copied!", 2000);
+					}).catch(function () {
+						if (settled) { return; }
+						settled = true;
+						clearTimeout(giveUp);
+						fallback();
+					});
+				} else {
+					fallback();
+				}
 				};
 				</script>
-				<p>Interested in working with me? Contact me at&nbsp;<a id="email" href="mailto:joseph@tajaran.com" onclick='openMailer(this);'>joseph@tajaran.com</a></p>
+				<div class="footer-social">
+					<a href="https://substack.com/@tajaran">
+						<img src="icons/substack.png" alt="Substack">
+					</a>
+					<a href="https://www.linkedin.com/in/tajaran/">
+						<img src="icons/LI-In-Bug.png" alt="LinkedIn">
+					</a>
+					<button type="button" onclick="copyEmail(this)">
+						<img src="icons/dashicons_email-alt.png" alt="Copy email address">
+						<span class="footer-copy-toast">joseph@tajaran.com</span>
+					</button>
+				</div>
 		</footer>
 	</div>
 </body>
