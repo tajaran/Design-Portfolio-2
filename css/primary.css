@@ -219,6 +219,17 @@ p > a,
 	color: #0273BE;
 }
 
+header a:active,
+header a:active i,
+p > a:active,
+.footer-menu li:active a,
+.footer-menu li:active a i,
+.go-back:active a,
+.go-back:active a i,
+.content p a:active {
+	color: #004E82;
+}
+
 .footer-menu a {
 	color: #111111;
 }
@@ -252,12 +263,6 @@ footer ul a {
 .logo {
 	width: 64px;
 	margin-right: 16px;
-}
-
-/* Logo shares the same hover/press affordance as the other nav items.
-   Scoped to opacity/transform only, so link color-on-hover stays instant. */
-.logo,
-.header-menu a {
 	transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 }
 
@@ -265,8 +270,7 @@ footer ul a {
 	opacity: 0.6;
 }
 
-.logo:active,
-.header-menu a:active {
+.logo:active {
 	transform: scale(0.95);
 }
 
@@ -952,6 +956,11 @@ footer {
 .footer-social a:hover img,
 .footer-social button:hover img {
 	opacity: 0.6;
+}
+
+.footer-social a:active img,
+.footer-social button:active img {
+	transform: scale(0.95);
 }
 
 .footer-copy-toast {
