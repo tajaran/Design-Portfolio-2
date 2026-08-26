@@ -165,7 +165,7 @@
 				<section class="content-parent">
 					<div class="content-child">
 						<div class="content">
-							<h1>Observation</h1>
+							<h4>Observation</h4>
 							<h2>Over time, our individual decisions to make various navigation patterns sticky caught up with us.</h2>
 							<p>In one of our weekly sessions with our internal pilot users, I noticed the amount of screen real estate they had available when completing the <a href="single-page-entry.html">shipment entry form</a>.</p>
 							<p>We noticed that this group would reduce the width of the window when sharing their screen (which is consistent with how other agents have used the product in the past). Since we'd previously made the horizontal navbar, route, and creation patterns all sticky, the space left for the form itself shrank. Fields you'd already completed higher up the page were covered by the stacked sticky elements, so you lost visibility into your own progress.</p>
@@ -191,7 +191,7 @@
 				<section class="content-parent">
 					<div class="content-child">
 						<div class="content">
-							<h1>Exploration</h1>
+							<h4>Exploration</h4>
 							<h2>During a lull, I proposed a ticket to resolve this issue for all screen sizes.</h2>
 							<p>This issue was already annoying on desktop, and after testing it some more myself, I determined that it would be even worse on mobile. Since the horizontal navbar was a means to exit a task and didn't help with completing the shipment entry form, it should hide and only be visible when a user needs it. I chose a ubiquitous pattern found in editorial content: hide the navbar when scrolling down and have it show up when a user scrolls up. It was direction-based. I liked this solution because usually our users completed forms going up to down and if they are going up then they are likely correcting something. Using this behavior I proposed we figure out the logic for how long the navbar should remain visible.</p>
 						</div>
@@ -241,7 +241,7 @@
 				<section class="content-parent">
 					<div class="content-child">
 						<div class="content">
-							<h1>Resolution</h1>
+							<h4>Resolution</h4>
 							<h2>Solving this for one screen created work that needed solving everywhere.</h2>
 							<p>I felt like if we established this treatment for one screen, we should examine whether it made sense across all of them. Hence, I looked at how this behavior may affect other screens in our system. I did this for all screen sizes. I'm glad I did this examination because for screens where we only use what's in the viewport height (no scrolling, usually a table), this behavior wasn't necessary. It was only necessary for screens that scrolled, and this did apply to table screens once they were reduced to mobile size. Since the table automatically converts to cards on mobile, the page begins to scroll.</p>
 						</div>
@@ -348,7 +348,7 @@
 				<section class="content-parent">
 					<div class="content-child">
 						<div class="content">
-							<h1>Outcome &amp; Reflection</h1>
+							<h4>Outcome &amp; Reflection</h4>
 							<h2>We updated all screens with the new scroll-to-hide interaction.</h2>
 							<p>While the scope of it seemed small, I believe these types of small interactions reduce those micro frustrations users experience on a product. It also established a new behavior for how we treat our long scrolling screens going forward, and the side navigation button became the new standard for how users navigate a long page on mobile.</p>
 						</div>

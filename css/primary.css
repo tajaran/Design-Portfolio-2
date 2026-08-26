@@ -568,19 +568,16 @@ main {
 	margin: 0 32px;
 }
 
-/* Paired images: side by side above the 620px breakpoint, stacked vertically below it */
+/* Vertically stacked image pairs (one image above another in the same container) */
 .content-img-stack {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 	align-items: center;
-	justify-content: center;
-	gap: 32px;
 	width: 100%;
 }
 
 .content-img-child-stack {
-	flex: 1 1 0;
-	min-width: 0;
+	margin: 16px 0;
 }
 
 /* Side-by-side breakpoint crops (e.g. mobile/tablet/desktop hero trio) */
@@ -1210,11 +1207,6 @@ footer h5 {
 
 	.content-img-child {
 		margin: 0 16px;
-	}
-
-	.content-img-stack {
-		flex-flow: column nowrap;
-		gap: 16px;
 	}
 
 	.hero-img-container {
