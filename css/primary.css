@@ -96,8 +96,23 @@ a {
 	padding-left: 24px;
 }
 
+/* Numbered lists: indent the whole list (markers included) off the
+   paragraph's left edge, and match the paragraph text color instead of
+   the lighter gray used for bullet lists */
+.content ol {
+	color: #111111;
+	margin-left: 24px;
+	margin-top: 8px;
+}
+
+/* Numbered markers keep the same muted tint as figcaptions, while the
+   item text itself matches the paragraph color set above */
+.content ol li::marker {
+	color: rgb(0, 0, 0, 0.6);
+}
+
 .content li {
-	margin-bottom: 8px;
+	margin-bottom: 0;
 }
 
 h5 {
@@ -391,6 +406,11 @@ a .three-col-image img {
 	background-color: #65385B;
 }
 
+/* Voma - Bg Color */
+#voma-bg {
+	background-color: #F6EDE9;
+}
+
 /* Blank Case Study - Bg Color */
 #no-bg {
 	background-color: transparent;
@@ -611,6 +631,13 @@ main {
 
 .content-img-child-stack {
 	margin: 16px 0;
+	width: 100%;
+}
+
+/* Stacked images vary in native size, so scale each to the full stack
+   width instead of rendering at its own natural pixel width */
+.content-img-child-stack img {
+	width: 100%;
 }
 
 /* Side-by-side breakpoint crops (e.g. mobile/tablet/desktop hero trio) */
@@ -733,6 +760,13 @@ main {
 	padding-top: 0;
 }
 
+/* Same fix as civic-first-section above, for the Systems & Experience
+   section: Voma lands on the legacy nth-child(4) row-rhythm selector since
+   the header block shifts every card's position by one */
+#civic-second-section .three-col-item:nth-child(4) {
+	padding-top: 0;
+}
+
 /* Civic Tech landing page: extra breathing room between the hero and the
    first category section specifically (not between sections generally) */
 #civic-first-section {
@@ -776,7 +810,8 @@ a .three-col-image {
 .three-col-item #pdop-bg img,
 .three-col-item #milkweed-bg img,
 .three-col-item #chidc-bg img,
-.three-col-item #betweenfriends-bg img  {
+.three-col-item #betweenfriends-bg img,
+.three-col-item #voma-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
