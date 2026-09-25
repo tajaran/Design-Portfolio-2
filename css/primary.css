@@ -261,6 +261,20 @@ p > a:hover,
 	text-decoration: underline;
 }
 
+/* Figcaption links: same color/hover/active states as paragraph links,
+   figcaption keeps its own font-family and font-size */
+figcaption a {
+	color: #0273BE;
+}
+
+figcaption a:active {
+	color: #004E82;
+}
+
+figcaption a:hover {
+	text-decoration: underline;
+}
+
 /* LISTS --------------------------------------------------*/
 header ul,
 footer ul {
@@ -409,6 +423,11 @@ a .three-col-image img {
 /* Voma - Bg Color */
 #voma-bg {
 	background-color: #F6EDE9;
+}
+
+/* Handshake - Bg Color */
+#handshake-bg {
+	background-color: #B3DDF2;
 }
 
 /* Blank Case Study - Bg Color */
@@ -752,18 +771,21 @@ main {
 
 /* Cards land on the legacy row-rhythm nth-child(4)/(5)/(6) selectors (meant
    for the flat homepage grid) since the header block now shifts every
-   card's position by one; doesn't apply here (Civic Tech's Chicago Defender
-   Charities card, Product Work's Distance Calculation and Activity Tracking) */
+   card's position by one; doesn't apply here (Civic Tech's Systems &
+   Experience section, where Handshake is the card affected; Product Work's
+   Distance Calculation and Activity Tracking) */
 #civic-first-section .three-col-item:nth-child(4),
 #civic-first-section .three-col-item:nth-child(5),
 #civic-first-section .three-col-item:nth-child(6) {
 	padding-top: 0;
 }
 
-/* Same fix as civic-first-section above, for the Systems & Experience
-   section: Voma lands on the legacy nth-child(4) row-rhythm selector since
-   the header block shifts every card's position by one */
-#civic-second-section .three-col-item:nth-child(4) {
+/* Same fix as civic-first-section above, for the Brand & Content section:
+   Chicago Defender Charities and Between Friends land on the legacy
+   nth-child(4)/(5) row-rhythm selectors since the header block shifts every
+   card's position by one */
+#civic-second-section .three-col-item:nth-child(4),
+#civic-second-section .three-col-item:nth-child(5) {
 	padding-top: 0;
 }
 
@@ -811,7 +833,8 @@ a .three-col-image {
 .three-col-item #milkweed-bg img,
 .three-col-item #chidc-bg img,
 .three-col-item #betweenfriends-bg img,
-.three-col-item #voma-bg img  {
+.three-col-item #voma-bg img,
+.three-col-item #handshake-bg img  {
 	max-width: 286px;
 	width: 85%;
 	height: auto;
